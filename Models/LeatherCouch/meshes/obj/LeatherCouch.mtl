@@ -1,0 +1,10 @@
+﻿newmtl M_Leather_Black
+	map_Kd M_Leather_Black_D.bmp
+	map_Ks M_Leather_Black_S.bmp
+	bump M_Leather_Black_N.bmp
+
+newmtl M_Metal_Chrome
+	map_Kd M_Metal_Chrome_D.bmp
+	map_Ks M_Metal_Chrome_S.bmp
+	bump M_Metal_Chrome_N.bmp
+

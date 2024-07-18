@@ -1,0 +1,30 @@
+﻿newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+
+newmtl M_Fabric_Grey_2
+	map_Kd M_Fabric_Grey_2_D.bmp
+	map_Ks M_Fabric_Grey_2_S.bmp
+	bump M_Fabric_Grey_2_N.bmp
+
+newmtl M_Fabric_YellowGreen_Mesh_2
+	map_Kd M_Fabric_YellowGreen_Mesh_2_D.bmp
+	map_Ks M_Fabric_YellowGreen_Mesh_2_S.bmp
+	bump M_Fabric_YellowGreen_Mesh_2_N.bmp
+
+newmtl M_Fabric_Black
+	map_Kd M_Fabric_Black_D.bmp
+	map_Ks M_Fabric_Black_S.bmp
+	bump M_Fabric_Black_N.bmp
+
+newmtl M_Fabric_Schlafsofa
+	map_Kd M_Fabric_Schlafsofa_D.bmp
+	map_Ks M_Fabric_Schlafsofa_S.bmp
+	bump M_Fabric_Schlafsofa_N.bmp
+
+newmtl M_Metal_Chrome
+	map_Kd M_Metal_Chrome_D.bmp
+	map_Ks M_Metal_Chrome_S.bmp
+	bump M_Metal_Chrome_N.bmp
+

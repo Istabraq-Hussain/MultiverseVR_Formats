@@ -1,0 +1,94 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/DeskChairTop/meshes/usda/DeskChairTop.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.17-19.26.05"
+        }
+        string version = "3BE102E162C755C035BCDAF9E543E0C95C002EC7"
+    }
+)
+{
+    def "desk_chair_top" (
+        prepend references = @Assets/Game/Meshes/MeshesLiving/desk_chair_top.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section4" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/desk_chair_top/Section4/UnrealMaterial>
+
+            def Material "UnrealMaterial" (
+                prepend references = @Assets/Game/Materials_Laborraum/M_Fabric_Schlafsofa.usda@
+            )
+            {
+                token outputs:unreal:surface.connect = </Root/desk_chair_top/Section4/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Schlafsofa.M_Fabric_Schlafsofa@
+                    token outputs:out
+                }
+            }
+        }
+
+        over "Section1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/desk_chair_top/Section1/UnrealMaterial>
+
+            def Material "UnrealMaterial" (
+                prepend references = @Assets/Game/Materials_Laborraum/M_Fabric_Grey_2.usda@
+            )
+            {
+                token outputs:unreal:surface.connect = </Root/desk_chair_top/Section1/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Grey_2.M_Fabric_Grey_2@
+                    token outputs:out
+                }
+            }
+        }
+
+        over "Section2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/desk_chair_top/Section2/UnrealMaterial>
+
+            def Material "UnrealMaterial" (
+                prepend references = @Assets/Game/Materials_Laborraum/M_Fabric_YellowGreen_Mesh_2.usda@
+            )
+            {
+                token outputs:unreal:surface.connect = </Root/desk_chair_top/Section2/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_YellowGreen_Mesh_2.M_Fabric_YellowGreen_Mesh_2@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+

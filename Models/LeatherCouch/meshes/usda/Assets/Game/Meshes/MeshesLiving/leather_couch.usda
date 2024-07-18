@@ -1,0 +1,54 @@
+#usda 1.0
+(
+    defaultPrim = "leather_couch"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "leather_couch" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/LeatherCouch/usda/Assets/Game/Meshes/MeshesLiving/leather_couch.usda@
+        string name = "leather_couch"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/leather_couch.leather_couch"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.17-18.49.57"
+        }
+        string version = "A939BC76811C63967A297ACC3BA184A6ABF955BA"
+    }
+    prepend payload = @leather_couch_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </leather_couch/Materials/M_Leather_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Leather_Black.M_Leather_Black"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </leather_couch/Materials/M_Metal_Chrome>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Leather_Black" (
+            prepend references = @../../Materials_Laborraum/M_Leather_Black.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Chrome" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Chrome.usda@
+        )
+        {
+        }
+    }
+}
+

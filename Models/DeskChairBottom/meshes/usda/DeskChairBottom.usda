@@ -1,0 +1,52 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/DeskChairBottom/meshes/usda/DeskChairBottom.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.17-19.42.14"
+        }
+        string version = "B3DFA72ACC0A6B5B95667EE4E31C23903D946E52"
+    }
+)
+{
+    def "desk_chair_bottom" (
+        prepend references = @Assets/Game/Meshes/MeshesLiving/desk_chair_bottom.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/desk_chair_bottom/Section2/UnrealMaterial>
+
+            def Material "UnrealMaterial" (
+                prepend references = @Assets/Game/Materials_Laborraum/M_Basic_Black_02.usda@
+            )
+            {
+                token outputs:unreal:surface.connect = </Root/desk_chair_bottom/Section2/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Basic_Black_02.M_Basic_Black_02@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+

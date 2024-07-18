@@ -1,0 +1,20 @@
+﻿newmtl M_Esstisch
+	map_Kd M_Esstisch_D.bmp
+	map_Ks M_Esstisch_S.bmp
+	bump M_Esstisch_N.bmp
+
+newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+
+newmtl M_Fabric_Esstischstuhl
+	map_Kd M_Fabric_Esstischstuhl_D.bmp
+	map_Ks M_Fabric_Esstischstuhl_S.bmp
+	bump M_Fabric_Esstischstuhl_N.bmp
+
+newmtl M_Plastic_Green
+	map_Kd M_Plastic_Green_D.bmp
+	map_Ks M_Plastic_Green_S.bmp
+	bump M_Plastic_Green_N.bmp
+

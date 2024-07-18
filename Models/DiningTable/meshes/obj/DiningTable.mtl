@@ -1,0 +1,5 @@
+﻿newmtl M_Esstisch
+	map_Kd M_Esstisch_D.bmp
+	map_Ks M_Esstisch_S.bmp
+	bump M_Esstisch_N.bmp
+

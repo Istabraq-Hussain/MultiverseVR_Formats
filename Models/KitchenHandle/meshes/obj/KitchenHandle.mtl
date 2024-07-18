@@ -1,0 +1,5 @@
+﻿newmtl M_Metal_Brushed
+	map_Kd M_Metal_Brushed_D.bmp
+	map_Ks M_Metal_Brushed_S.bmp
+	bump M_Metal_Brushed_N.bmp
+

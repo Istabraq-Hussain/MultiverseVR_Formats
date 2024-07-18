@@ -1,0 +1,25 @@
+﻿newmtl White
+	map_Kd White_D.bmp
+	map_Ks White_S.bmp
+	bump White_N.bmp
+
+newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+
+newmtl M_Metal_Brushed
+	map_Kd M_Metal_Brushed_D.bmp
+	map_Ks M_Metal_Brushed_S.bmp
+	bump M_Metal_Brushed_N.bmp
+
+newmtl M_Glass
+	map_Kd M_Glass_D.bmp
+	map_Ks M_Glass_S.bmp
+	bump M_Glass_N.bmp
+
+newmtl M_Icons
+	map_Kd M_Icons_D.bmp
+	map_Ks M_Icons_S.bmp
+	bump M_Icons_N.bmp
+

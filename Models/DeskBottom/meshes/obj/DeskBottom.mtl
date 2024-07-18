@@ -1,0 +1,10 @@
+﻿newmtl White
+	map_Kd White_D.bmp
+	map_Ks White_S.bmp
+	bump White_N.bmp
+
+newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+

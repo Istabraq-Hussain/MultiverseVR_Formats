@@ -1,0 +1,82 @@
+#usda 1.0
+(
+    defaultPrim = "dining_chair"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "dining_chair" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/DiningChair/meshes/usda/Assets/Game/Meshes/MeshesLiving/dining_chair.usda@
+        string name = "dining_chair"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/dining_chair.dining_chair"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.17-17.46.48"
+        }
+        string version = "3A1FEF05A4D01002E8DB3E9BD3830AB89F4FBF76"
+    }
+    prepend payload = @dining_chair_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </dining_chair/Materials/M_Esstisch>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Esstisch.M_Esstisch"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </dining_chair/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </dining_chair/Materials/M_Fabric_Esstischstuhl>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Fabric_Esstischstuhl.M_Fabric_Esstischstuhl"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </dining_chair/Materials/M_Plastic_Green>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_Green.M_Plastic_Green"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Esstisch" (
+            prepend references = @../../Materials_Laborraum/M_Esstisch.usda@
+        )
+        {
+        }
+
+        def Material "M_Basic_Black" (
+            prepend references = @../../Materials_Laborraum/M_Basic_Black.usda@
+        )
+        {
+        }
+
+        def Material "M_Fabric_Esstischstuhl" (
+            prepend references = @../../Materials_Laborraum/M_Fabric_Esstischstuhl.usda@
+        )
+        {
+        }
+
+        def Material "M_Plastic_Green" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_Green.usda@
+        )
+        {
+        }
+    }
+}
+
