@@ -1,0 +1,20 @@
+﻿newmtl M_Fabric_Panel_Gray
+	map_Kd M_Fabric_Panel_Gray_D.bmp
+	map_Ks M_Fabric_Panel_Gray_S.bmp
+	bump M_Fabric_Panel_Gray_N.bmp
+
+newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+
+newmtl M_Fabric_Black
+	map_Kd M_Fabric_Black_D.bmp
+	map_Ks M_Fabric_Black_S.bmp
+	bump M_Fabric_Black_N.bmp
+
+newmtl M_Plastic_White
+	map_Kd M_Plastic_White_D.bmp
+	map_Ks M_Plastic_White_S.bmp
+	bump M_Plastic_White_N.bmp
+

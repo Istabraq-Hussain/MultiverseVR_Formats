@@ -1,0 +1,5 @@
+﻿newmtl M_couch
+	map_Kd M_couch_D.bmp
+	map_Ks M_couch_S.bmp
+	bump M_couch_N.bmp
+

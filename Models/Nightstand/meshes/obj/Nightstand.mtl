@@ -1,0 +1,5 @@
+﻿newmtl M_Nightstand
+	map_Kd M_Nightstand_D.bmp
+	map_Ks M_Nightstand_S.bmp
+	bump M_Nightstand_N.bmp
+

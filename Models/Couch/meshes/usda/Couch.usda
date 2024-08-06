@@ -1,0 +1,45 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/Couch/meshes/usda/Couch.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.30-13.44.17"
+        }
+        string version = "8E7E5F285BF29F90111618952EAF146FF27DC92D"
+    }
+)
+{
+    def Mesh "couch" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        prepend references = @Assets/Game/Meshes/MeshesLiving/Couch.usda@
+    )
+    {
+        rel material:binding = </Root/couch/UnrealMaterial>
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        def Material "UnrealMaterial"
+        {
+            token outputs:unreal:surface.connect = </Root/couch/UnrealMaterial/UnrealShader.outputs:out>
+
+            def Shader "UnrealShader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_couch.M_couch@
+                token outputs:out
+            }
+        }
+    }
+}
+

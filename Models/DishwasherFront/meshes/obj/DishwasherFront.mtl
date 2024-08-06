@@ -1,0 +1,30 @@
+﻿newmtl M_Plastic_White
+	map_Kd M_Plastic_White_D.bmp
+	map_Ks M_Plastic_White_S.bmp
+	bump M_Plastic_White_N.bmp
+
+newmtl M_Glass_Oven_Door
+	map_Kd M_Glass_Oven_Door_D.bmp
+	map_Ks M_Glass_Oven_Door_S.bmp
+	bump M_Glass_Oven_Door_N.bmp
+
+newmtl M_Rubber_Plastic
+	map_Kd M_Rubber_Plastic_D.bmp
+	map_Ks M_Rubber_Plastic_S.bmp
+	bump M_Rubber_Plastic_N.bmp
+
+newmtl M_Plastic_Orange
+	map_Kd M_Plastic_Orange_D.bmp
+	map_Ks M_Plastic_Orange_S.bmp
+	bump M_Plastic_Orange_N.bmp
+
+newmtl M_Metal_Dishwasher
+	map_Kd M_Metal_Dishwasher_D.bmp
+	map_Ks M_Metal_Dishwasher_S.bmp
+	bump M_Metal_Dishwasher_N.bmp
+
+newmtl M_Kitchen_Fronts
+	map_Kd M_Kitchen_Fronts_D.bmp
+	map_Ks M_Kitchen_Fronts_S.bmp
+	bump M_Kitchen_Fronts_N.bmp
+

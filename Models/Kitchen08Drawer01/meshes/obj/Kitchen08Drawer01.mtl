@@ -1,0 +1,10 @@
+﻿newmtl M_Plastic_White
+	map_Kd M_Plastic_White_D.bmp
+	map_Ks M_Plastic_White_S.bmp
+	bump M_Plastic_White_N.bmp
+
+newmtl M_Kitchen_Fronts
+	map_Kd M_Kitchen_Fronts_D.bmp
+	map_Ks M_Kitchen_Fronts_S.bmp
+	bump M_Kitchen_Fronts_N.bmp
+

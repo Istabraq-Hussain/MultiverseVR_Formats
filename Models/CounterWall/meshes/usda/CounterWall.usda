@@ -1,0 +1,45 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/CounterWall/meshes/usda/CounterWall.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.08.01-12.45.52"
+        }
+        string version = "A75D14000AEA784299886D1F76F94F34E8831022"
+    }
+)
+{
+    def Mesh "counter_wall" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        prepend references = @Assets/Game/Meshes/Kitchen/CounterWall.usda@
+    )
+    {
+        rel material:binding = </Root/counter_wall/UnrealMaterial>
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        def Material "UnrealMaterial"
+        {
+            token outputs:unreal:surface.connect = </Root/counter_wall/UnrealMaterial/UnrealShader.outputs:out>
+
+            def Shader "UnrealShader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Wood_Counter.M_Wood_Counter@
+                token outputs:out
+            }
+        }
+    }
+}
+

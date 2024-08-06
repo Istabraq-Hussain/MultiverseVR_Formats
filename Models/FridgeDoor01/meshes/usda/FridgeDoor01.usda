@@ -1,0 +1,50 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/FridgeDoor01/meshes/usda/FridgeDoor01.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.08.01-13.37.40"
+        }
+        string version = "0486400991265CB9DE24E2F261B1ACAE086A3A25"
+    }
+)
+{
+    def Mesh "fridge_door_01" (
+        prepend references = @Assets/Game/Meshes/Fridge/FridgeDoor01.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/fridge_door_01/Section2/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/fridge_door_01/Section2/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Rubber_Plastic.M_Rubber_Plastic@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+

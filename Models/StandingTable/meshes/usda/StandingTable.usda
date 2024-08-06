@@ -1,0 +1,107 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/StandingTable/meshes/usda/StandingTable.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.31-12.10.38"
+        }
+        string version = "E02082A534EA9729EFC76D7857D9C7AE0EC619CF"
+    }
+)
+{
+    def Mesh "standing_table" (
+        prepend references = @Assets/Game/Meshes/MeshesLiving/StandingTable.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/standing_table/Section0/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/standing_table/Section0/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_White.M_Metal_White@
+                    token outputs:out
+                }
+            }
+        }
+
+        over "Section2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/standing_table/Section2/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/standing_table/Section2/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_White.M_Metal_White@
+                    token outputs:out
+                }
+            }
+        }
+
+        over "Section3" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/standing_table/Section3/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/standing_table/Section3/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome@
+                    token outputs:out
+                }
+            }
+        }
+
+        over "Section1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/standing_table/Section1/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/standing_table/Section1/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+

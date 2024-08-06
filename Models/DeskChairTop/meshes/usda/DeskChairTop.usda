@@ -1,26 +1,26 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 1
+    metersPerUnit = 0.009999999776482582
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/DeskChairTop/meshes/usda/DeskChairTop.usda@
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/DeskChairTop/meshes/usda/DeskChairTop.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.17-19.26.05"
+            string exportTime = "2024.07.30-14.26.25"
         }
-        string version = "3BE102E162C755C035BCDAF9E543E0C95C002EC7"
+        string version = "366F7A945C4479AD7E8FC2FEEA305B93193F4C5A"
     }
 )
 {
-    def "desk_chair_top" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/desk_chair_top.usda@
+    def Mesh "desk_chair_top" (
+        prepend references = @Assets/Game/Meshes/MeshesLiving/DeskChairTop.usda@
     )
     {
         token visibility = "inherited"
@@ -33,16 +33,14 @@ def Xform "Root" (
         {
             rel material:binding = </Root/desk_chair_top/Section4/UnrealMaterial>
 
-            def Material "UnrealMaterial" (
-                prepend references = @Assets/Game/Materials_Laborraum/M_Fabric_Schlafsofa.usda@
-            )
+            def Material "UnrealMaterial"
             {
                 token outputs:unreal:surface.connect = </Root/desk_chair_top/Section4/UnrealMaterial/UnrealShader.outputs:out>
 
                 def Shader "UnrealShader"
                 {
                     uniform token info:implementationSource = "sourceAsset"
-                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Schlafsofa.M_Fabric_Schlafsofa@
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_SofaBed.M_Fabric_SofaBed@
                     token outputs:out
                 }
             }
@@ -54,9 +52,7 @@ def Xform "Root" (
         {
             rel material:binding = </Root/desk_chair_top/Section1/UnrealMaterial>
 
-            def Material "UnrealMaterial" (
-                prepend references = @Assets/Game/Materials_Laborraum/M_Fabric_Grey_2.usda@
-            )
+            def Material "UnrealMaterial"
             {
                 token outputs:unreal:surface.connect = </Root/desk_chair_top/Section1/UnrealMaterial/UnrealShader.outputs:out>
 
@@ -75,9 +71,7 @@ def Xform "Root" (
         {
             rel material:binding = </Root/desk_chair_top/Section2/UnrealMaterial>
 
-            def Material "UnrealMaterial" (
-                prepend references = @Assets/Game/Materials_Laborraum/M_Fabric_YellowGreen_Mesh_2.usda@
-            )
+            def Material "UnrealMaterial"
             {
                 token outputs:unreal:surface.connect = </Root/desk_chair_top/Section2/UnrealMaterial/UnrealShader.outputs:out>
 

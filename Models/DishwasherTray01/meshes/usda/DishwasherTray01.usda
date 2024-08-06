@@ -1,0 +1,69 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/DishwasherTray01/meshes/usda/DishwasherTray01.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.08.01-11.08.05"
+        }
+        string version = "E1D02D5D7E81C2EC3BF1B022C3C23D072DF1CF96"
+    }
+)
+{
+    def Mesh "dishwasher_tray_01" (
+        prepend references = @Assets/Game/Meshes/Dishwasher/DishwasherTray01.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section3" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/dishwasher_tray_01/Section3/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/dishwasher_tray_01/Section3/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Plastic_Orange.M_Plastic_Orange@
+                    token outputs:out
+                }
+            }
+        }
+
+        over "Section2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/dishwasher_tray_01/Section2/UnrealMaterial>
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/dishwasher_tray_01/Section2/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_Brushed.M_Metal_Brushed@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+

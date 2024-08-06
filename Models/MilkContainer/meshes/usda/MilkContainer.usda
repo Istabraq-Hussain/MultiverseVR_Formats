@@ -1,26 +1,26 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 1
+    metersPerUnit = 0.009999999776482582
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/MilkContainer/meshes/usda/MilkContainer.usda@
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/MilkContainer/meshes/usda/MilkContainer.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.17-18.37.48"
+            string exportTime = "2024.07.30-15.41.15"
         }
-        string version = "FE5D3B5A1CCDB6558ED7EED95D56A44097835BA5"
+        string version = "B57672ED4400149712AAB7C9F2193989DDD9FF2A"
     }
 )
 {
-    def "milk_container" (
-        prepend references = @Assets/Game/Meshes/Kaffeemaschine/milk_container.usda@
+    def Mesh "milk_container" (
+        prepend references = @Assets/Game/Meshes/Kaffeemaschine/MilkContainer.usda@
     )
     {
         token visibility = "inherited"

@@ -1,0 +1,10 @@
+﻿newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+
+newmtl M_Fabric_SofaBed
+	map_Kd M_Fabric_SofaBed_D.bmp
+	map_Ks M_Fabric_SofaBed_S.bmp
+	bump M_Fabric_SofaBed_N.bmp
+

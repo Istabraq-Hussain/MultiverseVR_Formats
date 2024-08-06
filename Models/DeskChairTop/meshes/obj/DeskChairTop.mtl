@@ -18,10 +18,10 @@ newmtl M_Fabric_Black
 	map_Ks M_Fabric_Black_S.bmp
 	bump M_Fabric_Black_N.bmp
 
-newmtl M_Fabric_Schlafsofa
-	map_Kd M_Fabric_Schlafsofa_D.bmp
-	map_Ks M_Fabric_Schlafsofa_S.bmp
-	bump M_Fabric_Schlafsofa_N.bmp
+newmtl M_Fabric_SofaBed
+	map_Kd M_Fabric_SofaBed_D.bmp
+	map_Ks M_Fabric_SofaBed_S.bmp
+	bump M_Fabric_SofaBed_N.bmp
 
 newmtl M_Metal_Chrome
 	map_Kd M_Metal_Chrome_D.bmp

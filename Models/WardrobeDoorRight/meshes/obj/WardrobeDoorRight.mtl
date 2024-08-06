@@ -1,0 +1,10 @@
+﻿newmtl M_Wood_Furniture
+	map_Kd M_Wood_Furniture_D.bmp
+	map_Ks M_Wood_Furniture_S.bmp
+	bump M_Wood_Furniture_N.bmp
+
+newmtl M_Metal_Chrome
+	map_Kd M_Metal_Chrome_D.bmp
+	map_Ks M_Metal_Chrome_S.bmp
+	bump M_Metal_Chrome_N.bmp
+

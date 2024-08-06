@@ -1,0 +1,15 @@
+﻿newmtl M_OvenBase
+	map_Kd M_OvenBase_D.bmp
+	map_Ks M_OvenBase_S.bmp
+	bump M_OvenBase_N.bmp
+
+newmtl M_Basic_Black
+	map_Kd M_Basic_Black_D.bmp
+	map_Ks M_Basic_Black_S.bmp
+	bump M_Basic_Black_N.bmp
+
+newmtl M_Metal_Brushed
+	map_Kd M_Metal_Brushed_D.bmp
+	map_Ks M_Metal_Brushed_S.bmp
+	bump M_Metal_Brushed_N.bmp
+

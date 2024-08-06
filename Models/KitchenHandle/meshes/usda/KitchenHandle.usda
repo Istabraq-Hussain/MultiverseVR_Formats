@@ -1,26 +1,26 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 1
+    metersPerUnit = 0.009999999776482582
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/Models/KitchenHandle/meshes/usda/KitchenHandle.usda@
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/KitchenHandle/meshes/usda/KitchenHandle.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.17-16.58.10"
+            string exportTime = "2024.07.30-15.13.30"
         }
-        string version = "ACBC0DAE64CEEA530FE6B7BCDF7E4FE18625A30F"
+        string version = "C7507838E942E618400534693F711B7CB8A26ABA"
     }
 )
 {
-    def "kitchen_05_drawer_02_handle" (
-        prepend references = @Assets/Game/Meshes/Kitchen/SM_Kitchen_Handle.usda@
+    def Mesh "kitchen_01_drawer_01_handle" (
+        prepend references = @Assets/Game/Meshes/Kitchen/KitchenHandle.usda@
     )
     {
         token visibility = "inherited"

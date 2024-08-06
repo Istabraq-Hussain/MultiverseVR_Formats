@@ -1,0 +1,10 @@
+﻿newmtl M_Metal_Dishwasher
+	map_Kd M_Metal_Dishwasher_D.bmp
+	map_Ks M_Metal_Dishwasher_S.bmp
+	bump M_Metal_Dishwasher_N.bmp
+
+newmtl M_Rubber_Plastic
+	map_Kd M_Rubber_Plastic_D.bmp
+	map_Ks M_Rubber_Plastic_S.bmp
+	bump M_Rubber_Plastic_N.bmp
+

@@ -1,0 +1,48 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/WardrobeHandle/meshes/usda/WardrobeHandle.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.07.31-10.47.46"
+        }
+        string version = "D3CD5D528A628DE4EFBC24762BF8F59EB540B272"
+    }
+)
+{
+    def "closet"
+    {
+        def Mesh "wardrobe_handle_right" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            prepend references = @Assets/Game/Meshes/Kleiderschrank/WardrobeHandle.usda@
+        )
+        {
+            rel material:binding = </Root/closet/wardrobe_handle_right/UnrealMaterial>
+            token visibility = "inherited"
+            matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+            uniform token[] xformOpOrder = ["xformOp:transform"]
+
+            def Material "UnrealMaterial"
+            {
+                token outputs:unreal:surface.connect = </Root/closet/wardrobe_handle_right/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_Dark.M_Metal_Dark@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+
