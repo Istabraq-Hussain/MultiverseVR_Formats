@@ -1,0 +1,54 @@
+#usda 1.0
+(
+    defaultPrim = "Kitchen02Shelf"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "Kitchen02Shelf" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen02Shelf/meshes/usda/Game/Meshes/Kitchen/Kitchen02Shelf.usda@
+        string name = "Kitchen02Shelf"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Kitchen/Kitchen02Shelf.Kitchen02Shelf"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.08.07-13.00.44"
+        }
+        string version = "1751CA8360FF863A3EF925D796FAFC85EC3D99B0"
+    }
+    prepend payload = @Kitchen02Shelf_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </Kitchen02Shelf/Materials/M_Metal_Chrome>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </Kitchen02Shelf/Materials/M_Plastic_White>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Metal_Chrome" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Chrome.usda@
+        )
+        {
+        }
+
+        def Material "M_Plastic_White" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_White.usda@
+        )
+        {
+        }
+    }
+}
+

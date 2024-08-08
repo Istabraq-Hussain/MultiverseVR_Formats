@@ -1,0 +1,54 @@
+#usda 1.0
+(
+    defaultPrim = "RetailDoorPart1"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "RetailDoorPart1" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/RetailDoorPart1/meshes/usda/Game/Meshes/MeshesVerbindungsraum/RetailDoorPart1.usda@
+        string name = "RetailDoorPart1"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesVerbindungsraum/RetailDoorPart1.RetailDoorPart1"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.08.07-12.30.04"
+        }
+        string version = "382D45BAF96BC3685E64D2DF1983F1DDD109DC02"
+    }
+    prepend payload = @RetailDoorPart1_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </RetailDoorPart1/Materials/M_Door_Wood>
+        custom string unrealMaterial = "/Game/Materials/M_Door_Wood.M_Door_Wood"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </RetailDoorPart1/Materials/M_Metal_Chrome>
+        custom string unrealMaterial = "/Game/Materials/M_Metal_Chrome.M_Metal_Chrome"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Door_Wood" (
+            prepend references = @../../Materials/M_Door_Wood.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Chrome" (
+            prepend references = @../../Materials/M_Metal_Chrome.usda@
+        )
+        {
+        }
+    }
+}
+

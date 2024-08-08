@@ -1,0 +1,20 @@
+﻿newmtl M_OvenBase
+	map_Kd M_OvenBase_D.bmp
+	map_Ks M_OvenBase_S.bmp
+	bump M_OvenBase_N.bmp
+
+newmtl M_Glass_Oven
+	map_Kd M_Glass_Oven_D.bmp
+	map_Ks M_Glass_Oven_S.bmp
+	bump M_Glass_Oven_N.bmp
+
+newmtl M_Glass_Oven_Door
+	map_Kd M_Glass_Oven_Door_D.bmp
+	map_Ks M_Glass_Oven_Door_S.bmp
+	bump M_Glass_Oven_Door_N.bmp
+
+newmtl M_Rubber_Plastic
+	map_Kd M_Rubber_Plastic_D.bmp
+	map_Ks M_Rubber_Plastic_S.bmp
+	bump M_Rubber_Plastic_N.bmp
+

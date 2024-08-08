@@ -1,0 +1,5 @@
+﻿newmtl M_OvenBase
+	map_Kd M_OvenBase_D.bmp
+	map_Ks M_OvenBase_S.bmp
+	bump M_OvenBase_N.bmp
+
