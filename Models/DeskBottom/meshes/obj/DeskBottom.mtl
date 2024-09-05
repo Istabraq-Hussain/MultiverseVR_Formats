@@ -1,10 +1,24 @@
-﻿newmtl White
-	map_Kd White_D.bmp
-	map_Ks White_S.bmp
-	bump White_N.bmp
+# Blender 4.2.1 LTS MTL File: 'None'
+# www.blender.org
 
-newmtl M_Basic_Black
-	map_Kd M_Basic_Black_D.bmp
-	map_Ks M_Basic_Black_S.bmp
-	bump M_Basic_Black_N.bmp
+newmtl M_BasicBlack
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Basic_Black_D.bmp
+map_Ks ../../textures/M_Basic_Black_S.bmp
+map_Bump -bm 1.000000 ../../textures/M_Basic_Black_N.bmp
 
+newmtl M_White
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd ../../textures/White_D.bmp
+map_Ks ../../textures/White_S.bmp
+map_Bump -bm 1.000000 ../../textures/White_N.bmp

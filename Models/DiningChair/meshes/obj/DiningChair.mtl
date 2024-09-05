@@ -1,20 +1,45 @@
-﻿newmtl M_DiningTable
-	map_Kd M_DiningTable_D.bmp
-	map_Ks M_DiningTable_S.bmp
-	bump M_DiningTable_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_Basic_Black
-	map_Kd M_Basic_Black_D.bmp
-	map_Ks M_Basic_Black_S.bmp
-	bump M_Basic_Black_N.bmp
+newmtl M_BasicBlack
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Basic_Black_D.bmp
+map_Ks ../../textures/M_Basic_Black_S.bmp
+map_Bump ../../textures/M_Basic_Black_N.bmp
 
-newmtl M_Fabric_DiningChair
-	map_Kd M_Fabric_DiningChair_D.bmp
-	map_Ks M_Fabric_DiningChair_S.bmp
-	bump M_Fabric_DiningChair_N.bmp
+newmtl M_DiningTable
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_DiningTable_D.bmp
+map_Ks ../../textures/M_DiningTable_S.bmp
 
-newmtl M_Plastic_Green
-	map_Kd M_Plastic_Green_D.bmp
-	map_Ks M_Plastic_Green_S.bmp
-	bump M_Plastic_Green_N.bmp
+newmtl M_FabricDiningChair
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Fabric_DiningChair_D.bmp
+map_Ks ../../textures/M_Fabric_DiningChair_S.bmp
+map_Bump ../../textures/M_Fabric_DiningChair_N.bmp
 
+newmtl M_PlasticGreen
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Plastic_Green_D.bmp
+map_Ks ../../textures/M_Plastic_Green_S.bmp
+map_Bump ../../textures/M_Plastic_Green_N.bmp

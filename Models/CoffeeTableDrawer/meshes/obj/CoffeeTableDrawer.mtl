@@ -1,5 +1,13 @@
-﻿newmtl M_Wood_Furniture
-	map_Kd M_Wood_Furniture_D.bmp
-	map_Ks M_Wood_Furniture_S.bmp
-	bump M_Wood_Furniture_N.bmp
+# Blender 4.2.1 LTS MTL File: 'None'
+# www.blender.org
 
+newmtl M_WoodFurniture
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Wood_Furniture_D.bmp
+map_Ks ../../textures/M_Wood_Furniture_S.bmp
+map_Bump -bm 1.000000 ../../textures/M_Wood_Furniture_N.bmp

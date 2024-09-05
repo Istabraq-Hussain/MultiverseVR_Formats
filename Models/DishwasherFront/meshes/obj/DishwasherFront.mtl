@@ -1,30 +1,68 @@
-﻿newmtl M_Plastic_White
-	map_Kd M_Plastic_White_D.bmp
-	map_Ks M_Plastic_White_S.bmp
-	bump M_Plastic_White_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_Glass_Oven_Door
-	map_Kd M_Glass_Oven_Door_D.bmp
-	map_Ks M_Glass_Oven_Door_S.bmp
-	bump M_Glass_Oven_Door_N.bmp
+newmtl M_GlassOvenDoor
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Glass_Oven_Door_D.bmp
+map_Ks ../../textures/M_Glass_Oven_Door_S.bmp
+map_Bump ../../textures/M_Glass_Oven_Door_N.bmp
 
-newmtl M_Rubber_Plastic
-	map_Kd M_Rubber_Plastic_D.bmp
-	map_Ks M_Rubber_Plastic_S.bmp
-	bump M_Rubber_Plastic_N.bmp
+newmtl M_KitchenFronts
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Kitchen_Fronts_D.bmp
+map_Ks ../../textures/M_Kitchen_Fronts_S.bmp
+map_Bump ../../textures/M_Kitchen_Fronts_N.bmp
 
-newmtl M_Plastic_Orange
-	map_Kd M_Plastic_Orange_D.bmp
-	map_Ks M_Plastic_Orange_S.bmp
-	bump M_Plastic_Orange_N.bmp
+newmtl M_MetalDishwasher
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Metal_Dishwasher_D.bmp
+map_Ks ../../textures/M_Metal_Dishwasher_S.bmp
+map_Bump ../../textures/M_Metal_Dishwasher_N.bmp
 
-newmtl M_Metal_Dishwasher
-	map_Kd M_Metal_Dishwasher_D.bmp
-	map_Ks M_Metal_Dishwasher_S.bmp
-	bump M_Metal_Dishwasher_N.bmp
+newmtl M_PlasticOrange
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Plastic_Orange_D.bmp
+map_Ks ../../textures/M_Plastic_Orange_S.bmp
+map_Bump ../../textures/M_Plastic_Orange_N.bmp
 
-newmtl M_Kitchen_Fronts
-	map_Kd M_Kitchen_Fronts_D.bmp
-	map_Ks M_Kitchen_Fronts_S.bmp
-	bump M_Kitchen_Fronts_N.bmp
+newmtl M_PlasticWhite
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Plastic_White_D.bmp
+map_Ks ../../textures/M_Plastic_White_S.bmp
+map_Bump -bm 1.000000 ../../textures/M_Plastic_White_N.bmp
 
+newmtl M_RubberPlastic
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd ../../textures/M_Rubber_Plastic_D.bmp
+map_Ks ../../textures/M_Rubber_Plastic_S.bmp
+map_Bump ../../textures/M_Rubber_Plastic_N.bmp
