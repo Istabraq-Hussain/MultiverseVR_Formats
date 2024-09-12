@@ -7,20 +7,20 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/DiningTable/meshes/usda/DiningTable.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DiningTable/meshes/usda/DiningTable.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.30-15.05.28"
+            string exportTime = "2024.09.12-17.54.07"
         }
-        string version = "15E8899AE347EE7FF36C7B61D0C35ABD78B6D637"
+        string version = "5B7774EAB6E3BE8CD265B21877B7001EF35A3C28"
     }
 )
 {
-    def Mesh "dining_table" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/DiningTable.usda@
+    def "dining_table" (
+        prepend references = @Game/Meshes/MeshesLiving/DiningTable.usda@
     )
     {
         token visibility = "inherited"

@@ -7,24 +7,24 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/CounterSinkStove/meshes/usda/CounterSinkStove.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/CounterSinkStove/meshes/usda/CounterSinkStove.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-12.28.17"
+            string exportTime = "2024.09.11-14.04.37"
         }
-        string version = "64E06C918A7B7895D7B6B63C675A5E336C6CD62C"
+        string version = "D44563883C3630F3DB7E4BCD1331F22C022B9F1B"
     }
 )
 {
-    def Mesh "counter_sink_stove" (
-        prepend references = @Assets/Game/Meshes/Kitchen/CounterSinkStove.usda@
+    def "counter_sink_stove" (
+        prepend references = @Game/Meshes/Kitchen/CounterSinkStove.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-0.000002130528872212878, 0.9999999999977306, 0, 0), (-0.9999999999977306, -0.000002130528872212878, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
     }
 }

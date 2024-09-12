@@ -1,0 +1,68 @@
+#usda 1.0
+(
+    defaultPrim = "FridgeShelf"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "FridgeShelf" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/FridgeShelf/meshes/usda/Game/Meshes/Fridge/FridgeShelf.usda@
+        string name = "FridgeShelf"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Fridge/FridgeShelf.FridgeShelf"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-19.26.40"
+        }
+        string version = "82A2AA8E2946DAB1D18858DB72BA4BB5B881FCD5"
+    }
+    prepend payload = @FridgeShelf_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeShelf/Materials/M_Plastic_White>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeShelf/Materials/M_Plastic_Fridge>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_Fridge.M_Plastic_Fridge"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeShelf/Materials/M_Metal_Fridge>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Fridge.M_Metal_Fridge"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Plastic_White" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_White.usda@
+        )
+        {
+        }
+
+        def Material "M_Plastic_Fridge" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_Fridge.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Fridge" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Fridge.usda@
+        )
+        {
+        }
+    }
+}
+

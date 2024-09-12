@@ -6,15 +6,15 @@
 
 def Material "M_Metal_Brushed" (
     assetInfo = {
-        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Door01/meshes/usda/Game/Materials_Laborraum/M_Metal_Brushed.usda@
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Door01/Game/Materials_Laborraum/M_Metal_Brushed.usda@
         string name = "M_Metal_Brushed"
         dictionary unreal = {
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Metal_Brushed.M_Metal_Brushed"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-13.41.00"
+            string exportTime = "2024.09.12-19.34.00"
         }
-        string version = "04ADEA2FC1C25AFB04492C6D904E784B7AB34F64"
+        string version = "FCEA40C68E36453F80CE711217582CE3D928A1E6"
     }
 )
 {

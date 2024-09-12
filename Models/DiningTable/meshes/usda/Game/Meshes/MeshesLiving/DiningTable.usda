@@ -1,0 +1,36 @@
+#usda 1.0
+(
+    defaultPrim = "DiningTable"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "DiningTable" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DiningTable/meshes/usda/Game/Meshes/MeshesLiving/DiningTable.usda@
+        string name = "DiningTable"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/DiningTable.DiningTable"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-17.54.07"
+        }
+        string version = "CC38BDB6EB67FD5C5289767E81E80DBEA59777CA"
+    }
+    prepend payload = @DiningTable_payload.usda@
+)
+{
+    rel material:binding = </DiningTable/Materials/M_DiningTable>
+    custom string unrealMaterial = "/Game/Materials_Laborraum/M_DiningTable.M_DiningTable"
+
+    def Scope "Materials"
+    {
+        def Material "M_DiningTable" (
+            prepend references = @../../Materials_Laborraum/M_DiningTable.usda@
+        )
+        {
+        }
+    }
+}
+

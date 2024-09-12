@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DeskChair/meshes/usda/DeskChair.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-17.36.50"
+        }
+        string version = "9242AA2C55BFD02B25460B49FEEEE81342F24739"
+    }
+)
+{
+    def "desk_chair" (
+        prepend references = @Game/SM_DeskChair.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (0.9848077532469797, 0.17364817633547439, 0, 0), (-0.17364817633547439, 0.9848077532469797, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

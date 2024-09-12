@@ -1,0 +1,118 @@
+#usda 1.0
+(
+    defaultPrim = "DishwasherFront"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "DishwasherFront" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DishwasherFront/meshes/usda/Game/Meshes/Dishwasher/DishwasherFront.usda@
+        string name = "DishwasherFront"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Dishwasher/DishwasherFront.DishwasherFront"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-18.02.57"
+        }
+        string version = "3A72D323DAE6A094D8E8CF165D79A5E75E4A6FBB"
+    }
+    prepend payload = @DishwasherFront_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Plastic_White>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Glass_Oven_Door>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Glass_Oven_Door.M_Glass_Oven_Door"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Rubber_Plastic>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Rubber_Plastic.M_Rubber_Plastic"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Plastic_Orange>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_Orange.M_Plastic_Orange"
+    }
+
+    over "Section4" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Glass_Oven_Door>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Glass_Oven_Door.M_Glass_Oven_Door"
+    }
+
+    over "Section5" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Metal_Dishwasher>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Dishwasher.M_Metal_Dishwasher"
+    }
+
+    over "Section6" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherFront/Materials/M_Kitchen_Fronts>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Kitchen_Fronts.M_Kitchen_Fronts"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Plastic_White" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_White.usda@
+        )
+        {
+        }
+
+        def Material "M_Glass_Oven_Door" (
+            prepend references = @../../Materials_Laborraum/M_Glass_Oven_Door.usda@
+        )
+        {
+        }
+
+        def Material "M_Rubber_Plastic" (
+            prepend references = @../../Materials_Laborraum/M_Rubber_Plastic.usda@
+        )
+        {
+        }
+
+        def Material "M_Plastic_Orange" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_Orange.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Dishwasher" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Dishwasher.usda@
+        )
+        {
+        }
+
+        def Material "M_Kitchen_Fronts" (
+            prepend references = @../../Materials_Laborraum/M_Kitchen_Fronts.usda@
+        )
+        {
+        }
+    }
+}
+

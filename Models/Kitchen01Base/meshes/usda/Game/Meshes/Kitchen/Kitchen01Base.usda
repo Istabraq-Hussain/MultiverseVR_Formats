@@ -13,7 +13,7 @@ def "Kitchen01Base" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Kitchen/Kitchen01Base.Kitchen01Base"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-13.23.48"
+            string exportTime = "2024.09.12-19.30.11"
         }
         string version = "F00FD650E6067E30160A6E57275E948B60C99534"
     }

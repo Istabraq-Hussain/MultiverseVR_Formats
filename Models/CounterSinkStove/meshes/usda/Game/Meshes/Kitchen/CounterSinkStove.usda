@@ -1,0 +1,36 @@
+#usda 1.0
+(
+    defaultPrim = "CounterSinkStove"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "CounterSinkStove" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/CounterSinkStove/meshes/usda/Game/Meshes/Kitchen/CounterSinkStove.usda@
+        string name = "CounterSinkStove"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Kitchen/CounterSinkStove.CounterSinkStove"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.11-14.04.37"
+        }
+        string version = "E91F24693D2B1700F94565D4ABEF55FF3B4EABE6"
+    }
+    prepend payload = @CounterSinkStove_payload.usda@
+)
+{
+    rel material:binding = </CounterSinkStove/Materials/M_Wood_Counter>
+    custom string unrealMaterial = "/Game/Materials_Laborraum/M_Wood_Counter.M_Wood_Counter"
+
+    def Scope "Materials"
+    {
+        def Material "M_Wood_Counter" (
+            prepend references = @../../Materials_Laborraum/M_Wood_Counter.usda@
+        )
+        {
+        }
+    }
+}
+

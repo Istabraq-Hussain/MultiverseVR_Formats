@@ -1,0 +1,82 @@
+#usda 1.0
+(
+    defaultPrim = "DiningChair"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "DiningChair" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DiningChair/meshes/usda/Game/Meshes/MeshesLiving/DiningChair.usda@
+        string name = "DiningChair"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/DiningChair.DiningChair"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-17.48.24"
+        }
+        string version = "C57EFB84427D062F105F756827140A34017C8DA7"
+    }
+    prepend payload = @DiningChair_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DiningChair/Materials/M_DiningTable>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_DiningTable.M_DiningTable"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DiningChair/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DiningChair/Materials/M_Fabric_DiningChair>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Fabric_DiningChair.M_Fabric_DiningChair"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DiningChair/Materials/M_Plastic_Green>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_Green.M_Plastic_Green"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_DiningTable" (
+            prepend references = @../../Materials_Laborraum/M_DiningTable.usda@
+        )
+        {
+        }
+
+        def Material "M_Basic_Black" (
+            prepend references = @../../Materials_Laborraum/M_Basic_Black.usda@
+        )
+        {
+        }
+
+        def Material "M_Fabric_DiningChair" (
+            prepend references = @../../Materials_Laborraum/M_Fabric_DiningChair.usda@
+        )
+        {
+        }
+
+        def Material "M_Plastic_Green" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_Green.usda@
+        )
+        {
+        }
+    }
+}
+

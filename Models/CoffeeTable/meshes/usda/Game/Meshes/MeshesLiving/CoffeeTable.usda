@@ -1,0 +1,36 @@
+#usda 1.0
+(
+    defaultPrim = "CoffeeTable"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "CoffeeTable" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/CoffeeTable/meshes/usda/Game/Meshes/MeshesLiving/CoffeeTable.usda@
+        string name = "CoffeeTable"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/CoffeeTable.CoffeeTable"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.11-13.44.00"
+        }
+        string version = "B89CFA68BF0B896AF7A4AB0A12B612A840C230FA"
+    }
+    prepend payload = @CoffeeTable_payload.usda@
+)
+{
+    rel material:binding = </CoffeeTable/Materials/M_Wood_Furniture>
+    custom string unrealMaterial = "/Game/Materials_Laborraum/M_Wood_Furniture.M_Wood_Furniture"
+
+    def Scope "Materials"
+    {
+        def Material "M_Wood_Furniture" (
+            prepend references = @../../Materials_Laborraum/M_Wood_Furniture.usda@
+        )
+        {
+        }
+    }
+}
+

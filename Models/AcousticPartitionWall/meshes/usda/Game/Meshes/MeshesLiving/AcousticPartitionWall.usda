@@ -1,0 +1,82 @@
+#usda 1.0
+(
+    defaultPrim = "AcousticPartitionWall"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "AcousticPartitionWall" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/AcousticPartitionWall/meshes/usda/Game/Meshes/MeshesLiving/AcousticPartitionWall.usda@
+        string name = "AcousticPartitionWall"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/AcousticPartitionWall.AcousticPartitionWall"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.11-12.33.06"
+        }
+        string version = "46B4A10A998E2DCD6B63F6AC53B5CA84DC0ABA6F"
+    }
+    prepend payload = @AcousticPartitionWall_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </AcousticPartitionWall/Materials/M_Fabric_Panel>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Fabric_Panel.M_Fabric_Panel"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </AcousticPartitionWall/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </AcousticPartitionWall/Materials/WorldGridMaterial>
+        custom string unrealMaterial = "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </AcousticPartitionWall/Materials/M_Plastic_White>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Fabric_Panel" (
+            prepend references = @../../Materials_Laborraum/M_Fabric_Panel.usda@
+        )
+        {
+        }
+
+        def Material "M_Basic_Black" (
+            prepend references = @../../Materials_Laborraum/M_Basic_Black.usda@
+        )
+        {
+        }
+
+        def Material "WorldGridMaterial" (
+            prepend references = @../../../Engine/EngineMaterials/WorldGridMaterial.usda@
+        )
+        {
+        }
+
+        def Material "M_Plastic_White" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_White.usda@
+        )
+        {
+        }
+    }
+}
+

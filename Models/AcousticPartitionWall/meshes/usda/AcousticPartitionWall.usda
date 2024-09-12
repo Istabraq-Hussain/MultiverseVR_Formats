@@ -7,60 +7,67 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/AcousticPartitionWall/meshes/usda/AcousticPartitionWall.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/AcousticPartitionWall/meshes/usda/AcousticPartitionWall.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-11.35.21"
+            string exportTime = "2024.09.11-12.33.06"
         }
-        string version = "986839064ABFE2DD2ABD6E1096F3673137D7A956"
+        string version = "8A4D8C5550C22D9DE1F9EB73BD1FCEA65DD3A2C6"
     }
 )
 {
-    def Mesh "acoustic_partition_wall" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/AcousticPartitionWall.usda@
-    )
+    def "_0_EG_Living"
     {
-        token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
-        uniform token[] xformOpOrder = ["xformOp:transform"]
-
-        over "Section0" (
-            prepend apiSchemas = ["MaterialBindingAPI"]
+        def "acoustic_partition_wall" (
+            prepend references = @Game/Meshes/MeshesLiving/AcousticPartitionWall.usda@
         )
         {
-            rel material:binding = </Root/acoustic_partition_wall/Section0/UnrealMaterial>
+            token visibility = "inherited"
+            matrix4d xformOp:transform = ( (-2.220446049250313e-16, -1.0000000000000002, 0, 0), (1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+            uniform token[] xformOpOrder = ["xformOp:transform"]
 
-            def Material "UnrealMaterial"
+            over "Section0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
             {
-                token outputs:unreal:surface.connect = </Root/acoustic_partition_wall/Section0/UnrealMaterial/UnrealShader.outputs:out>
+                rel material:binding = </Root/_0_EG_Living/acoustic_partition_wall/Section0/UnrealMaterial>
 
-                def Shader "UnrealShader"
+                def Material "UnrealMaterial" (
+                    prepend references = @Game/Materials_Laborraum/M_Fabric_Panel_Gray.usda@
+                )
                 {
-                    uniform token info:implementationSource = "sourceAsset"
-                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Panel_Gray.M_Fabric_Panel_Gray@
-                    token outputs:out
+                    token outputs:unreal:surface.connect = </Root/_0_EG_Living/acoustic_partition_wall/Section0/UnrealMaterial/UnrealShader.outputs:out>
+
+                    def Shader "UnrealShader"
+                    {
+                        uniform token info:implementationSource = "sourceAsset"
+                        uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Panel_Gray.M_Fabric_Panel_Gray@
+                        token outputs:out
+                    }
                 }
             }
-        }
 
-        over "Section2" (
-            prepend apiSchemas = ["MaterialBindingAPI"]
-        )
-        {
-            rel material:binding = </Root/acoustic_partition_wall/Section2/UnrealMaterial>
-
-            def Material "UnrealMaterial"
+            over "Section2" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
             {
-                token outputs:unreal:surface.connect = </Root/acoustic_partition_wall/Section2/UnrealMaterial/UnrealShader.outputs:out>
+                rel material:binding = </Root/_0_EG_Living/acoustic_partition_wall/Section2/UnrealMaterial>
 
-                def Shader "UnrealShader"
+                def Material "UnrealMaterial" (
+                    prepend references = @Game/Materials_Laborraum/M_Fabric_Black.usda@
+                )
                 {
-                    uniform token info:implementationSource = "sourceAsset"
-                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Black.M_Fabric_Black@
-                    token outputs:out
+                    token outputs:unreal:surface.connect = </Root/_0_EG_Living/acoustic_partition_wall/Section2/UnrealMaterial/UnrealShader.outputs:out>
+
+                    def Shader "UnrealShader"
+                    {
+                        uniform token info:implementationSource = "sourceAsset"
+                        uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Fabric_Black.M_Fabric_Black@
+                        token outputs:out
+                    }
                 }
             }
         }

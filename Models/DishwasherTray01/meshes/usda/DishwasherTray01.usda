@@ -7,24 +7,24 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/DishwasherTray01/meshes/usda/DishwasherTray01.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DishwasherTray01/meshes/usda/DishwasherTray01.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.01-11.08.05"
+            string exportTime = "2024.09.12-18.25.51"
         }
-        string version = "E1D02D5D7E81C2EC3BF1B022C3C23D072DF1CF96"
+        string version = "156987005CE2B111612B79219E16B8B854CA7B44"
     }
 )
 {
-    def Mesh "dishwasher_tray_01" (
-        prepend references = @Assets/Game/Meshes/Dishwasher/DishwasherTray01.usda@
+    def "dishwasher_tray_01" (
+        prepend references = @Game/Meshes/Dishwasher/DishwasherTray01.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section3" (
@@ -33,7 +33,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/dishwasher_tray_01/Section3/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Plastic_Orange.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/dishwasher_tray_01/Section3/UnrealMaterial/UnrealShader.outputs:out>
 
@@ -52,7 +54,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/dishwasher_tray_01/Section2/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Metal_Brushed.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/dishwasher_tray_01/Section2/UnrealMaterial/UnrealShader.outputs:out>
 

@@ -1,0 +1,64 @@
+#usda 1.0
+(
+    defaultPrim = "M_couch"
+    upAxis = "Z"
+)
+
+def Material "M_couch" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Couch/meshes/usda/Game/Materials_Laborraum/M_couch.usda@
+        string name = "M_couch"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/Materials_Laborraum/M_couch.M_couch"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.11-13.53.28"
+        }
+        string version = "EDA6FCBF12FF8A8AAAFEC33AC1B212EAAD86554E"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_couch/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_couch/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_couch.M_couch@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor.connect = </M_couch/diffuseTexture.outputs:rgb>
+        float inputs:metallic = 0
+        normal3f inputs:normal = (0.49803925, -0.49803925, 1)
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.8470589
+        float inputs:specular = 0.49803925
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_couch.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "diffuseTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 0, 1)
+        asset inputs:file = @Textures/Game_Materials_Laborraum_M_couch_BaseColor.png@
+        token inputs:sourceColorSpace = "sRGB"
+        float2 inputs:st.connect = </M_couch/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        color3f outputs:rgb
+    }
+}
+

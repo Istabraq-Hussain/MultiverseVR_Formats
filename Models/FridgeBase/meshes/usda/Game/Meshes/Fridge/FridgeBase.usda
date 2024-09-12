@@ -1,0 +1,118 @@
+#usda 1.0
+(
+    defaultPrim = "FridgeBase"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "FridgeBase" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/FridgeBase/meshes/usda/Game/Meshes/Fridge/FridgeBase.usda@
+        string name = "FridgeBase"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Fridge/FridgeBase.FridgeBase"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-18.37.49"
+        }
+        string version = "9E937ADAE1E18C12E12A719BFA7192F308EC7D96"
+    }
+    prepend payload = @FridgeBase_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Plastic_White>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Glass_Oven_Door>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Glass_Oven_Door.M_Glass_Oven_Door"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Display>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Display.M_Display"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Metal_Fridge>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Fridge.M_Metal_Fridge"
+    }
+
+    over "Section4" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Metal_Fridge>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Fridge.M_Metal_Fridge"
+    }
+
+    over "Section5" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Rubber_Plastic>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Rubber_Plastic.M_Rubber_Plastic"
+    }
+
+    over "Section6" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </FridgeBase/Materials/M_Icons>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Icons.M_Icons"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Plastic_White" (
+            prepend references = @../../Materials_Laborraum/M_Plastic_White.usda@
+        )
+        {
+        }
+
+        def Material "M_Glass_Oven_Door" (
+            prepend references = @../../Materials_Laborraum/M_Glass_Oven_Door.usda@
+        )
+        {
+        }
+
+        def Material "M_Display" (
+            prepend references = @../../Materials_Laborraum/M_Display.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Fridge" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Fridge.usda@
+        )
+        {
+        }
+
+        def Material "M_Rubber_Plastic" (
+            prepend references = @../../Materials_Laborraum/M_Rubber_Plastic.usda@
+        )
+        {
+        }
+
+        def Material "M_Icons" (
+            prepend references = @../../Materials_Laborraum/M_Icons.usda@
+        )
+        {
+        }
+    }
+}
+

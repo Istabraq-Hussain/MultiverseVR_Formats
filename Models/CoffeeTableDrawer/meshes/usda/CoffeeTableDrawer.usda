@@ -7,24 +7,24 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/CoffeeTableDrawer/meshes/usda/CoffeeTableDrawer.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/CoffeeTableDrawer/meshes/usda/CoffeeTableDrawer.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-12.49.25"
+            string exportTime = "2024.09.11-13.50.17"
         }
-        string version = "7CC2E0A2D10176BCE963AD19A76EE4FB713567C3"
+        string version = "DAA120BB8D6525FA487A7BAE5F28167AD01EF9A7"
     }
 )
 {
-    def Mesh "coffee_table_drawer" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/CoffeeTableDrawer.usda@
+    def "coffee_table_drawer" (
+        prepend references = @Game/Meshes/MeshesLiving/CoffeeTableDrawer.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
     }
 }

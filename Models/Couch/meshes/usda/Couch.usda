@@ -7,29 +7,31 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/Couch/meshes/usda/Couch.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Couch/meshes/usda/couch.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.30-13.44.17"
+            string exportTime = "2024.09.11-13.53.28"
         }
-        string version = "8E7E5F285BF29F90111618952EAF146FF27DC92D"
+        string version = "9624660B59BBEAF0BA2C4FA8B1A3D54BE102EEAB"
     }
 )
 {
-    def Mesh "couch" (
+    def "couch" (
         prepend apiSchemas = ["MaterialBindingAPI"]
-        prepend references = @Assets/Game/Meshes/MeshesLiving/Couch.usda@
+        prepend references = @Game/Meshes/MeshesLiving/Couch.usda@
     )
     {
         rel material:binding = </Root/couch/UnrealMaterial>
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
-        def Material "UnrealMaterial"
+        def Material "UnrealMaterial" (
+            prepend references = @Game/Materials_Laborraum/M_couch.usda@
+        )
         {
             token outputs:unreal:surface.connect = </Root/couch/UnrealMaterial/UnrealShader.outputs:out>
 

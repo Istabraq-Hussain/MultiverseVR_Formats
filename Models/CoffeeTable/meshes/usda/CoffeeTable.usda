@@ -1,0 +1,31 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/CoffeeTable/meshes/usda/CoffeeTable.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.11-13.44.00"
+        }
+        string version = "F82F783E6FB3F49CDB7AD35AF43E5477AE52A1F6"
+    }
+)
+{
+    def "coffee_table" (
+        prepend references = @Game/Meshes/MeshesLiving/CoffeeTable.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

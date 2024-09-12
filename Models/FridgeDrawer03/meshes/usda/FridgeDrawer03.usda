@@ -7,24 +7,24 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/FridgeDrawer03/meshes/usda/FridgeDrawer03.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/FridgeDrawer03/meshes/usda/FridgeDrawer03.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.01-14.40.36"
+            string exportTime = "2024.09.12-19.19.06"
         }
-        string version = "8EFB9A7D5E8C6A53372CF17F378D85F8E0716D44"
+        string version = "B790D0B971AB43DF788ABA7B0EFCE058C4EEA488"
     }
 )
 {
-    def Mesh "fridge_drawer_03" (
-        prepend references = @Assets/Game/Meshes/Fridge/FridgeDrawer03.usda@
+    def "fridge_drawer_03" (
+        prepend references = @Game/Meshes/Fridge/FridgeDrawer03.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
     }
 }

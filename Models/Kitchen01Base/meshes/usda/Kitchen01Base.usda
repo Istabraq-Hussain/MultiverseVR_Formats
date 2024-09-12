@@ -13,9 +13,9 @@ def Xform "Root" (
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-13.23.48"
+            string exportTime = "2024.09.12-19.30.12"
         }
-        string version = "307D74E7B951E0FC15B51F0E8C93DD337006DEF5"
+        string version = "E410238374A8AB75FAEAEB475DA0A3FB73AB3B06"
     }
 )
 {
@@ -24,7 +24,7 @@ def Xform "Root" (
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section2" (

@@ -7,24 +7,24 @@
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/FridgeDoor02/meshes/usda/FridgeDoor02.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/FridgeDoor02/meshes/usda/FridgeDoor02.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.01-13.33.08"
+            string exportTime = "2024.09.12-18.45.23"
         }
-        string version = "279C3F95D2D32AC93DA5BECDDE4669414AF6D3DD"
+        string version = "82E93EFDDA8541E37434A2D178B23BF13EA49CDA"
     }
 )
 {
-    def Mesh "fridge_door_02" (
-        prepend references = @Assets/Game/Meshes/Fridge/FridgeDoor02.usda@
+    def "fridge_door_02" (
+        prepend references = @Game/Meshes/Fridge/FridgeDoor02.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section1" (
@@ -33,7 +33,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/fridge_door_02/Section1/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Rubber_Plastic.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/fridge_door_02/Section1/UnrealMaterial/UnrealShader.outputs:out>
 

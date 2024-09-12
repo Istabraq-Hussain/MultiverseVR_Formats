@@ -7,13 +7,13 @@
 
 def "Kitchen01Door01" (
     assetInfo = {
-        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Door01/meshes/usda/Game/Meshes/Kitchen/Kitchen01Door01.usda@
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Door01/Game/Meshes/Kitchen/Kitchen01Door01.usda@
         string name = "Kitchen01Door01"
         dictionary unreal = {
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Kitchen/Kitchen01Door01.Kitchen01Door01"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-13.41.00"
+            string exportTime = "2024.09.12-19.34.00"
         }
         string version = "014B805D61FF70A49BDBE8FB5F5287C91F29531B"
     }

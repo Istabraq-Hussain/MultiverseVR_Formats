@@ -1,0 +1,54 @@
+#usda 1.0
+(
+    defaultPrim = "DishwasherBase"
+    metersPerUnit = 0.009999999776482582
+    upAxis = "Z"
+)
+
+def "DishwasherBase" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/DishwasherBase/meshes/usda/Game/Meshes/Dishwasher/DishwasherBase.usda@
+        string name = "DishwasherBase"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Dishwasher/DishwasherBase.DishwasherBase"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.12-17.58.17"
+        }
+        string version = "E22E8B9E37BB3C5CAD4897B5FB3F5B8277BF48BD"
+    }
+    prepend payload = @DishwasherBase_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherBase/Materials/M_Metal_Dishwasher>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Dishwasher.M_Metal_Dishwasher"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DishwasherBase/Materials/M_Rubber_Plastic>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Rubber_Plastic.M_Rubber_Plastic"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Metal_Dishwasher" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Dishwasher.usda@
+        )
+        {
+        }
+
+        def Material "M_Rubber_Plastic" (
+            prepend references = @../../Materials_Laborraum/M_Rubber_Plastic.usda@
+        )
+        {
+        }
+    }
+}
+
