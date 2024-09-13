@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Closet"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "Closet" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Kleiderschrank/Closet.Closet"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-16.19.30"
+            string exportTime = "2024.09.13-18.50.54"
         }
-        string version = "F205D7B25FEFF2562C2D577A4A32A0D3354E91CD"
+        string version = "74CD9872E382B9EF9D4E934A05A61C63F0CA1E26"
     }
     prepend payload = @Closet_payload.usda@
 )

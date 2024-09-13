@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "AcousticPartitionWall"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "AcousticPartitionWall" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/MeshesLiving/AcousticPartitionWall.AcousticPartitionWall"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.11-12.33.06"
+            string exportTime = "2024.09.13-18.05.43"
         }
-        string version = "46B4A10A998E2DCD6B63F6AC53B5CA84DC0ABA6F"
+        string version = "26B62225D49E45BDB0E7BFD8A4DB050CE025FF10"
     }
     prepend payload = @AcousticPartitionWall_payload.usda@
 )

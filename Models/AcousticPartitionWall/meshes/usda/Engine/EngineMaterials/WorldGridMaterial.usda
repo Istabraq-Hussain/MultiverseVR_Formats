@@ -12,9 +12,9 @@ def Material "WorldGridMaterial" (
             string assetType = "Material"
             string contentPath = "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.11-12.33.06"
+            string exportTime = "2024.09.13-18.05.42"
         }
-        string version = "8A680F284EAEF19742AACA0BAF8BA138ECBEDB0C"
+        string version = "90344E60DE41DD2EBF2985CCA220A58801B87D93"
     }
 )
 {

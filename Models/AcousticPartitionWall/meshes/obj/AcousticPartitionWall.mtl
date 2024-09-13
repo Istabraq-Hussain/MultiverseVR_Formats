@@ -1,7 +1,7 @@
 # Blender 4.1.1 MTL File: 'None'
 # www.blender.org
 
-newmtl M_Basic_Black
+newmtl M_BasicBlack
 Ns 359.999939
 Ka 1.000000 1.000000 1.000000
 Kd 0.000000 0.000000 0.000000
