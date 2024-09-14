@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "FridgeBase"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "FridgeBase" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Fridge/FridgeBase.FridgeBase"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.37.49"
+            string exportTime = "2024.09.15-00.45.31"
         }
-        string version = "9E937ADAE1E18C12E12A719BFA7192F308EC7D96"
+        string version = "C380F7D823D78A8DB6B70F884C963FC8C32B99A3"
     }
     prepend payload = @FridgeBase_payload.usda@
 )

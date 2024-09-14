@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "DishwasherFront"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "DishwasherFront" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Dishwasher/DishwasherFront.DishwasherFront"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.02.57"
+            string exportTime = "2024.09.14-22.31.05"
         }
-        string version = "3A72D323DAE6A094D8E8CF165D79A5E75E4A6FBB"
+        string version = "E463CEB47607A5F60865145A862B5F679C99ECC8"
     }
     prepend payload = @DishwasherFront_payload.usda@
 )

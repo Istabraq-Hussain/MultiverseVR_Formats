@@ -12,9 +12,9 @@ def Material "M_Metal_Brushed" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Metal_Brushed.M_Metal_Brushed"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.41.57"
+            string exportTime = "2024.09.15-00.55.48"
         }
-        string version = "26FB25BCB35070598EF1F437F595CA58D4113F2B"
+        string version = "E24F5AAD159516AE9864D9F46112D76956CA13C9"
     }
 )
 {

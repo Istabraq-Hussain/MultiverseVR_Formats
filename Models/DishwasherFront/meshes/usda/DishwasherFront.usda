@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def Xform "Root" (
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.02.57"
+            string exportTime = "2024.09.14-22.31.05"
         }
-        string version = "37B507D5513C66743187D891CE8738ABCDDC03AE"
+        string version = "75EAA3E29F27331CDC533E66CDEA30BB5E2AB538"
     }
 )
 {
@@ -24,7 +24,7 @@ def Xform "Root" (
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (0, 0.9999999999996494, -8.377580408262544e-7, 0), (-0.999999999999001, 1.1842749003676545e-12, 0.0000014137166647504236, 0), (0.0000014137166647509197, 8.37758040825417e-7, 0.9999999999986497, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section0" (

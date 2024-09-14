@@ -12,9 +12,9 @@ def Material "M_Plastic_Orange" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Plastic_Orange.M_Plastic_Orange"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.02.57"
+            string exportTime = "2024.09.14-22.31.05"
         }
-        string version = "C3EB6675B3EE85F1583A1579A0EDEFC30511847B"
+        string version = "FE9336CD0DE17E900AA73857E048AAC142AC5E5A"
     }
 )
 {

@@ -12,9 +12,9 @@ def Material "M_Metal_Chrome" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.41.57"
+            string exportTime = "2024.09.15-00.55.48"
         }
-        string version = "5BE6BC7C8D7F499C538D8D20311F3362744674CA"
+        string version = "4DD0F144037A1A181436709B782044DBACEC75B0"
     }
 )
 {

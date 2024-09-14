@@ -12,9 +12,9 @@ def Material "M_Kitchen_Fronts" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Kitchen_Fronts.M_Kitchen_Fronts"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.02.57"
+            string exportTime = "2024.09.14-22.31.05"
         }
-        string version = "02A11D3A993419ED4FCD991C0A1B8EB4766809EE"
+        string version = "CF2AD0093957083372BAEE60E838BF04215FB2D3"
     }
 )
 {

@@ -12,9 +12,9 @@ def Material "M_Plastic_White" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.33.39"
+            string exportTime = "2024.09.15-00.09.41"
         }
-        string version = "44B877AF01C00072CDA825710CD63DFAD5BE2316"
+        string version = "37987028A291C09262CCDAB365EE27FCA18FD8AF"
     }
 )
 {

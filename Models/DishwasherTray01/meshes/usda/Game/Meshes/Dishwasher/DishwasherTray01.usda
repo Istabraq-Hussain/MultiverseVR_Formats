@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "DishwasherTray01"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "DishwasherTray01" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Dishwasher/DishwasherTray01.DishwasherTray01"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-18.25.50"
+            string exportTime = "2024.09.14-23.33.53"
         }
-        string version = "01FD374278183262995A29ABAA5EF6A01C00C4F6"
+        string version = "88B071A2B9AF184DAC9830014CB32444D706A059"
     }
     prepend payload = @DishwasherTray01_payload.usda@
 )
