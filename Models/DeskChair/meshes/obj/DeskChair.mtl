@@ -1,0 +1,73 @@
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
+
+newmtl M_BasicBlack
+Ns 359.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl M_BasicBlack02
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 0.004777 0.004777 0.004777
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl M_FabricBlack
+Ns 61.038025
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../textures/M_FabricBlack.png
+
+newmtl M_FabricGrey2
+Ns 23.390982
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../textures/M_FabricGrey2.png
+
+newmtl M_FabricSofaBed
+Ns 23.390982
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../textures/M_FabricSofaBed.png
+map_Bump -bm 1.000000 ../../textures/M_FabricSofaBedNormal.png
+
+newmtl M_FabricYellowGreenMesh2
+Ns 23.390982
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../textures/M_FabricYellowGreenMesh2.png
+
+newmtl M_MetalChrome
+Ns 813.533264
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd ../../textures/M_MetalChrome.png

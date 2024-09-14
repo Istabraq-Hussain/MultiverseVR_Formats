@@ -12,9 +12,9 @@ def Material "White" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/White.White"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.18.26"
+            string exportTime = "2024.09.14-15.25.03"
         }
-        string version = "49A3E130C7C43620146C7F8BBCD1E85E73BF7600"
+        string version = "160B77BA96CA5971CDBA70D4F45465C7D45679AA"
     }
 )
 {

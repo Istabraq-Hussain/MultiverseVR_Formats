@@ -12,9 +12,9 @@ def Material "M_Basic_Black" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.48.24"
+            string exportTime = "2024.09.14-16.50.28"
         }
-        string version = "A8FCABE650E856070347D556569A17A95B7FC025"
+        string version = "78E09435D2A9915469F20653A9F6918201BDDDD8"
     }
 )
 {

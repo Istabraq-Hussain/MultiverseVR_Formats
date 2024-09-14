@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,13 +13,13 @@ def Xform "Root" (
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.36.50"
+            string exportTime = "2024.09.14-15.44.06"
         }
-        string version = "9242AA2C55BFD02B25460B49FEEEE81342F24739"
+        string version = "EF6F4AA9A8AD248A7BCA14FBCD615FF59369F3AA"
     }
 )
 {
-    def "desk_chair" (
+    def "DeskChair" (
         prepend references = @Game/SM_DeskChair.usda@
     )
     {

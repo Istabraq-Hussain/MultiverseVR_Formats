@@ -12,9 +12,9 @@ def Material "M_DiningTable" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_DiningTable.M_DiningTable"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.54.07"
+            string exportTime = "2024.09.14-17.59.54"
         }
-        string version = "64A753BE079CD39BBC868CBF8BBC1DBD649CC2D5"
+        string version = "5CF46EEA25ECD1E183CD91A07A281D5CFDF4901A"
     }
 )
 {

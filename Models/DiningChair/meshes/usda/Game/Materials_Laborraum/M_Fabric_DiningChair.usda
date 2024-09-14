@@ -12,9 +12,9 @@ def Material "M_Fabric_DiningChair" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Fabric_DiningChair.M_Fabric_DiningChair"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.48.24"
+            string exportTime = "2024.09.14-16.50.28"
         }
-        string version = "72C88DA5E73E6BBA51DB22E44F802321A6E28C8F"
+        string version = "46A987B134E05607299EA97156C089AB9F9274CD"
     }
 )
 {

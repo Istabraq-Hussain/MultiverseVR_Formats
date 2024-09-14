@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "DiningChair"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "DiningChair" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/MeshesLiving/DiningChair.DiningChair"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.48.24"
+            string exportTime = "2024.09.14-16.50.29"
         }
-        string version = "C57EFB84427D062F105F756827140A34017C8DA7"
+        string version = "3A1FEF05A4D01002E8DB3E9BD3830AB89F4FBF76"
     }
     prepend payload = @DiningChair_payload.usda@
 )

@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Couch"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -14,9 +14,9 @@ def "Couch" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/MeshesLiving/Couch.Couch"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.11-13.53.28"
+            string exportTime = "2024.09.14-17.30.58"
         }
-        string version = "0AA4555611098B90885DFDBF781DF602DA203F72"
+        string version = "7E03D2FB5BE46B7B0F4D91809830E1EA1C6CB1D1"
     }
     prepend payload = @Couch_payload.usda@
 )

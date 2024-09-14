@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "DiningTable"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -14,9 +14,9 @@ def "DiningTable" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/MeshesLiving/DiningTable.DiningTable"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.54.07"
+            string exportTime = "2024.09.14-17.59.54"
         }
-        string version = "CC38BDB6EB67FD5C5289767E81E80DBEA59777CA"
+        string version = "83A5461602E4FE74F7FE0E81FDBEED0DF453F26B"
     }
     prepend payload = @DiningTable_payload.usda@
 )

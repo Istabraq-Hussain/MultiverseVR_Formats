@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "SM_DeskChair"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "SM_DeskChair" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/SM_DeskChair.SM_DeskChair"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.36.48"
+            string exportTime = "2024.09.14-15.44.04"
         }
-        string version = "301E0D1C6F238797976AB3F03D523D3F5A787A88"
+        string version = "FC11D8FB8C8E5F56A579F8B9DD1C2C743B073B8D"
     }
     prepend payload = @SM_DeskChair_payload.usda@
 )

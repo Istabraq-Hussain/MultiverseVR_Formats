@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "desk"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "desk" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/desk.desk"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.18.26"
+            string exportTime = "2024.09.14-15.25.03"
         }
-        string version = "7C92E9A754E6AAA5AA32E94689DF64E52EA3A1C6"
+        string version = "1921714D5E206042B4C6C9767AFA620FE8F06FA9"
     }
     prepend payload = @desk_payload.usda@
 )

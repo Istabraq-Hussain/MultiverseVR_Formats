@@ -12,9 +12,9 @@ def Material "M_Fabric_SofaBed" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Fabric_SofaBed.M_Fabric_SofaBed"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-17.36.48"
+            string exportTime = "2024.09.14-15.44.04"
         }
-        string version = "06DB2DC93D4B8C483A3E002B847F0C6CA93CC47B"
+        string version = "930CE95BCD0C8FC40E319D83E6DA8C7A960E0836"
     }
 )
 {

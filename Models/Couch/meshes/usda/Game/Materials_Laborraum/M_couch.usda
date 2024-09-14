@@ -12,9 +12,9 @@ def Material "M_couch" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_couch.M_couch"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.11-13.53.28"
+            string exportTime = "2024.09.14-17.30.58"
         }
-        string version = "EDA6FCBF12FF8A8AAAFEC33AC1B212EAAD86554E"
+        string version = "60ABBD9DAF0AC5483C1D264E246820F7646EDFD2"
     }
 )
 {
