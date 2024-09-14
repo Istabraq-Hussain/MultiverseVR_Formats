@@ -12,9 +12,9 @@ def Material "M_Wood_Furniture" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Wood_Furniture.M_Wood_Furniture"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.11-13.44.00"
+            string exportTime = "2024.09.14-12.52.11"
         }
-        string version = "1DCADFED2F2B877103D6B74F3277711A6B49CF62"
+        string version = "57F4CCEF0EFFC98FB3B1E33AC8963B1D4A1D2370"
     }
 )
 {

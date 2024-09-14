@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "CoffeeTable"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -14,9 +14,9 @@ def "CoffeeTable" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/MeshesLiving/CoffeeTable.CoffeeTable"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.11-13.44.00"
+            string exportTime = "2024.09.14-12.52.11"
         }
-        string version = "B89CFA68BF0B896AF7A4AB0A12B612A840C230FA"
+        string version = "BB7459CAD3E0565D73213112299578FA776AE793"
     }
     prepend payload = @CoffeeTable_payload.usda@
 )
