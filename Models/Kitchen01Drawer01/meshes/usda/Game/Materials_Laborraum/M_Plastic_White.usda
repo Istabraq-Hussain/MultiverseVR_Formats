@@ -6,15 +6,15 @@
 
 def Material "M_Plastic_White" (
     assetInfo = {
-        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Drawer01/meshes/usda/Game/Materials_Laborraum/M_Plastic_White.usda@
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Drawer01/Game/Materials_Laborraum/M_Plastic_White.usda@
         string name = "M_Plastic_White"
         dictionary unreal = {
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Plastic_White.M_Plastic_White"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.35.37"
+            string exportTime = "2024.09.16-16.37.23"
         }
-        string version = "030F7B72D1706932ECF95B1E6CE1352154EF88FB"
+        string version = "4BC93407A6B523BDC1D2089B1326011D6F3DA447"
     }
 )
 {

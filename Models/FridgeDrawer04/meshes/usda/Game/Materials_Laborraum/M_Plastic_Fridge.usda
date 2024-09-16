@@ -12,9 +12,9 @@ def Material "M_Plastic_Fridge" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Plastic_Fridge.M_Plastic_Fridge"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.20.04"
+            string exportTime = "2024.09.16-15.23.47"
         }
-        string version = "77C09EECF5645EA8FED8553C1272B562C20BBC45"
+        string version = "6AF0D495E1513847D48205C5682220A6CFB1CF50"
     }
 )
 {

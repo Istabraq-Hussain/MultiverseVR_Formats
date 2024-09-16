@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "FridgeDrawer04"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "FridgeDrawer04" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Fridge/FridgeDrawer04.FridgeDrawer04"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.20.04"
+            string exportTime = "2024.09.16-15.23.47"
         }
-        string version = "F037BBDF03E0F562BE0291105CB2C5FB5E289400"
+        string version = "86850EEF36B07B79A3734E77B1D54DA562589394"
     }
     prepend payload = @FridgeDrawer04_payload.usda@
 )

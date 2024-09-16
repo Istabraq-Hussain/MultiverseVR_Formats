@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,14 +13,14 @@ def Xform "Root" (
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.35.37"
+            string exportTime = "2024.09.16-16.37.24"
         }
-        string version = "ACBFC3BA05E31B55EB3144DB97F2D465D057D035"
+        string version = "429438B02B5F8874B410BB97992D3505BEF66967"
     }
 )
 {
     def "kitchen_01_drawer_01" (
-        prepend references = @Game/Meshes/Kitchen/Kitchen01Drawer01.usda@
+        prepend references = @../../Game/Meshes/Kitchen/Kitchen01Drawer01.usda@
     )
     {
         token visibility = "inherited"

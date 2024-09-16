@@ -6,15 +6,15 @@
 
 def Material "M_Kitchen_Fronts" (
     assetInfo = {
-        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Door01/Game/Materials_Laborraum/M_Kitchen_Fronts.usda@
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Door01/meshes/usda/Game/Materials_Laborraum/M_Kitchen_Fronts.usda@
         string name = "M_Kitchen_Fronts"
         dictionary unreal = {
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Kitchen_Fronts.M_Kitchen_Fronts"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.34.00"
+            string exportTime = "2024.09.16-16.55.57"
         }
-        string version = "6A415487A8AD26744B44A47FB92B0A4B6317CE4E"
+        string version = "7F8986B58F0B9164D4964DAC29B787D6F8EA8DF9"
     }
 )
 {

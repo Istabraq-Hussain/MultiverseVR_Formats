@@ -12,9 +12,9 @@ def Material "M_Metal_Fridge" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Metal_Fridge.M_Metal_Fridge"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.19.05"
+            string exportTime = "2024.09.16-15.18.19"
         }
-        string version = "BC9CDCF73F1A42A03B445F633293D2852807F79E"
+        string version = "01462F934F6BF441A1EC1D3C9FD66BB629162E65"
     }
 )
 {

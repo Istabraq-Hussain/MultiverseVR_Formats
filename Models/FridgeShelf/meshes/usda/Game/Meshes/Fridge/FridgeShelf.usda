@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "FridgeShelf"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "FridgeShelf" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Fridge/FridgeShelf.FridgeShelf"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.26.40"
+            string exportTime = "2024.09.16-15.33.03"
         }
-        string version = "82A2AA8E2946DAB1D18858DB72BA4BB5B881FCD5"
+        string version = "0E3BCED1D831934529A0F208B5AD64A4DCD88C16"
     }
     prepend payload = @FridgeShelf_payload.usda@
 )

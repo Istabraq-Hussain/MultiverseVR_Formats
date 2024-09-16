@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def Xform "Root" (
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.12-19.16.51"
+            string exportTime = "2024.09.16-15.12.40"
         }
-        string version = "6BEABE6E0CE756FF10978ECF179EA0B6E6038D11"
+        string version = "D1B211B0BE6E001A4B25F691F41A97E544E6858D"
     }
 )
 {
