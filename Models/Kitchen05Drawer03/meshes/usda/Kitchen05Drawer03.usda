@@ -1,30 +1,30 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/Kitchen05Drawer03/meshes/usda/Kitchen05Drawer03.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen05Drawer03/meshes/usda/Kitchen05Drawer03.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.01-12.27.59"
+            string exportTime = "2024.09.16-19.59.44"
         }
-        string version = "9B41C2F7D5A4C52CACA16356950E373FCFADC61D"
+        string version = "9BFF81B6400EE3F90BEE5F4364BEAB6E86935C64"
     }
 )
 {
-    def Mesh "kitchen_05_drawer_03" (
-        prepend references = @Assets/Game/Meshes/Kitchen/Kitchen05Drawer03.usda@
+    def "kitchen_05_drawer_03" (
+        prepend references = @Game/Meshes/Kitchen/Kitchen05Drawer03.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
     }
 }

@@ -12,9 +12,9 @@ def Material "M_Rubber_Plastic" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Rubber_Plastic.M_Rubber_Plastic"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-12.46.51"
+            string exportTime = "2024.09.16-17.35.55"
         }
-        string version = "48AD34D3F4E8AB474EFE68EE66D49FAE6191662A"
+        string version = "66FECE82622E7D1E226BE5257C29475BB807AF8E"
     }
 )
 {

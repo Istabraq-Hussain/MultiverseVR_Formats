@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Kitchen02Base"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "Kitchen02Base" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Kitchen/Kitchen02Base.Kitchen02Base"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-12.46.51"
+            string exportTime = "2024.09.16-17.35.55"
         }
-        string version = "6DC4ED5371ADF7F9089A4B7463339B6B80989D1E"
+        string version = "15D40109C625426144341DF16B1516BCAF3DAC20"
     }
     prepend payload = @Kitchen02Base_payload.usda@
 )

@@ -6,15 +6,15 @@
 
 def Material "M_Metal_Chrome" (
     assetInfo = {
-        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Shelf/meshes/usda/Game/Materials_Laborraum/M_Metal_Chrome.usda@
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Kitchen01Shelf/Game/Materials_Laborraum/M_Metal_Chrome.usda@
         string name = "M_Metal_Chrome"
         dictionary unreal = {
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.13.12"
+            string exportTime = "2024.09.16-17.28.21"
         }
-        string version = "3C9896CCF6156ED895C845B20B1D18A279FD56DA"
+        string version = "91444E83E08AA46ECB94A6E0E6669D7821E2035B"
     }
 )
 {

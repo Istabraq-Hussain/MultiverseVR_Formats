@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Kitchen01Drawer02"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "Kitchen01Drawer02" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Kitchen/Kitchen01Drawer02.Kitchen01Drawer02"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.27.12"
+            string exportTime = "2024.09.16-17.14.59"
         }
-        string version = "9C533F019DCD910507D8171FDF86D87E1CD8D9DA"
+        string version = "84AF9CFEDE9E3322490F613F096DE2E25BAF75CC"
     }
     prepend payload = @Kitchen01Drawer02_payload.usda@
 )
