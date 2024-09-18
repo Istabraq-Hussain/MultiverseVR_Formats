@@ -1,20 +1,43 @@
-﻿newmtl M_Plastic_White
-	map_Kd M_Plastic_White_D.bmp
-	map_Ks M_Plastic_White_S.bmp
-	bump M_Plastic_White_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_Kitchen_Fronts
-	map_Kd M_Kitchen_Fronts_D.bmp
-	map_Ks M_Kitchen_Fronts_S.bmp
-	bump M_Kitchen_Fronts_N.bmp
+newmtl M_DrawerMat
+Ns 91.180298
+Ka 1.000000 1.000000 1.000000
+Kd 0.020289 0.021219 0.025187
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../textures/M_DrawerMat.png
 
-newmtl M_Metal_Chrome
-	map_Kd M_Metal_Chrome_D.bmp
-	map_Ks M_Metal_Chrome_S.bmp
-	bump M_Metal_Chrome_N.bmp
+newmtl M_KitchenFronts
+Ns 492.748962
+Ka 1.000000 1.000000 1.000000
+Kd 0.018500 0.017642 0.025187
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
 
-newmtl M_Drawer_Mat
-	map_Kd M_Drawer_Mat_D.bmp
-	map_Ks M_Drawer_Mat_S.bmp
-	bump M_Drawer_Mat_N.bmp
+newmtl M_MetalChrome
+Ns 813.533264
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd ../../textures/M_MetalChrome.png
 
+newmtl M_PlasticWhite
+Ns 492.748962
+Ka 1.000000 1.000000 1.000000
+Kd 0.799103 0.799103 0.799103
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

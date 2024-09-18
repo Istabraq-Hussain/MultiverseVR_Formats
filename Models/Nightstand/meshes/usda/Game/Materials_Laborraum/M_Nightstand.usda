@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    defaultPrim = "M_Nightstand"
+    upAxis = "Z"
+)
+
+def Material "M_Nightstand" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Nightstand/meshes/usda/Game/Materials_Laborraum/M_Nightstand.usda@
+        string name = "M_Nightstand"
+        dictionary unreal = {
+            string assetType = "Material"
+            string contentPath = "/Game/Materials_Laborraum/M_Nightstand.M_Nightstand"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.18-00.44.51"
+        }
+        string version = "25876F41B96FE4C988D9F0A5A2C73391E9A10D33"
+    }
+)
+{
+    token inputs:stPrimvarName = "st"
+    token outputs:surface.connect = </M_Nightstand/SurfaceShader.outputs:surface>
+    token outputs:unreal:surface.connect = </M_Nightstand/UnrealShader.outputs:out>
+
+    def Shader "UnrealShader"
+    {
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Nightstand.M_Nightstand@
+        token outputs:out
+    }
+
+    def Shader "SurfaceShader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:anisotropy = 0
+        color3f inputs:diffuseColor.connect = </M_Nightstand/diffuseTexture.outputs:rgb>
+        float inputs:metallic = 0
+        float inputs:occlusion = 1
+        float inputs:roughness = 0.29803923
+        float inputs:specular = 0.29803923
+        token outputs:surface
+    }
+
+    def Shader "PrimvarReader"
+    {
+        uniform token info:id = "UsdPrimvarReader_float2"
+        string inputs:varname.connect = </M_Nightstand.inputs:stPrimvarName>
+        token outputs:result
+    }
+
+    def Shader "diffuseTexture"
+    {
+        uniform token info:id = "UsdUVTexture"
+        float4 inputs:fallback = (0, 0, 0, 1)
+        asset inputs:file = @Textures/Game_Materials_Laborraum_M_Nightstand_BaseColor.png@
+        token inputs:sourceColorSpace = "sRGB"
+        float2 inputs:st.connect = </M_Nightstand/PrimvarReader.outputs:result>
+        token inputs:wrapS = "repeat"
+        token inputs:wrapT = "repeat"
+        color3f outputs:rgb
+    }
+}
+

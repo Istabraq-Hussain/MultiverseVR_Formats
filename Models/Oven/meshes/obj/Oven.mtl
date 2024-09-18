@@ -1,45 +1,93 @@
-﻿newmtl M_Metal_Burnished_Steel
-	map_Kd M_Metal_Burnished_Steel_D.bmp
-	map_Ks M_Metal_Burnished_Steel_S.bmp
-	bump M_Metal_Burnished_Steel_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_OvenBase
-	map_Kd M_OvenBase_D.bmp
-	map_Ks M_OvenBase_S.bmp
-	bump M_OvenBase_N.bmp
-
-newmtl M_Metal_Chrome
-	map_Kd M_Metal_Chrome_D.bmp
-	map_Ks M_Metal_Chrome_S.bmp
-	bump M_Metal_Chrome_N.bmp
-
-newmtl M_Rubber_Plastic
-	map_Kd M_Rubber_Plastic_D.bmp
-	map_Ks M_Rubber_Plastic_S.bmp
-	bump M_Rubber_Plastic_N.bmp
-
-newmtl M_Glass_Oven_Door
-	map_Kd M_Glass_Oven_Door_D.bmp
-	map_Ks M_Glass_Oven_Door_S.bmp
-	bump M_Glass_Oven_Door_N.bmp
-
-newmtl M_Basic_Black
-	map_Kd M_Basic_Black_D.bmp
-	map_Ks M_Basic_Black_S.bmp
-	bump M_Basic_Black_N.bmp
+newmtl M_BasicBlack
+Ns 359.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
 
 newmtl M_Display
-	map_Kd M_Display_D.bmp
-	map_Ks M_Display_S.bmp
-	bump M_Display_N.bmp
+Ns 813.533264
+Ka 1.000000 1.000000 1.000000
+Kd 0.109462 0.130136 0.107023
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl M_GlassOven
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.001214 0.003347
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.600000
+illum 9
+
+newmtl M_GlassOvenDoor
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
 
 newmtl M_Icons
-	map_Kd M_Icons_D.bmp
-	map_Ks M_Icons_S.bmp
-	bump M_Icons_N.bmp
+Ns 251.964600
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
 
-newmtl M_Glass_Oven
-	map_Kd M_Glass_Oven_D.bmp
-	map_Ks M_Glass_Oven_S.bmp
-	bump M_Glass_Oven_N.bmp
+newmtl M_MetalBurnishedSteel
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd ../../textures/M_MetalChrome.png
+map_Bump -bm 1.000000 ../../textures/M_MetalBurnishedSteelNormal.png
 
+newmtl M_MetalChrome
+Ns 813.533264
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd ../usda/Game/Materials_Laborraum/Textures/Game_Materials_Laborraum_M_Metal_Chrome_BaseColor.png
+
+newmtl M_OvenBase
+Ns 639.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.174647 0.174647 0.174647
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl M_RubberPlastic
+Ns 251.964600
+Ka 1.000000 1.000000 1.000000
+Kd 0.054480 0.054480 0.054480
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

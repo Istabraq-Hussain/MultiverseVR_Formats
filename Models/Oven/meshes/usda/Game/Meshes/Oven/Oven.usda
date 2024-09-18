@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Oven"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "Oven" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Oven/Oven.Oven"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.38.05"
+            string exportTime = "2024.09.18-01.03.19"
         }
-        string version = "3B94816F4C30B9C674D166E77A35F3E9DCAEB364"
+        string version = "15E4DA08A0F7CCEFF2CA868DBAF4FABB03FD318B"
     }
     prepend payload = @Oven_payload.usda@
 )

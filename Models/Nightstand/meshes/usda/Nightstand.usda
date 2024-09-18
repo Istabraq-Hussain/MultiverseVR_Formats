@@ -1,30 +1,30 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/Nightstand/meshes/usda/Nightstand.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Nightstand/meshes/usda/Nightstand.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-11.25.28"
+            string exportTime = "2024.09.18-00.44.51"
         }
-        string version = "AA461CD60691C9E326D7C4E9271D075C70AD360B"
+        string version = "E657FB55828DDE4695ACED571950A6FC7D35383F"
     }
 )
 {
-    def Mesh "nightstand" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/Nightstand.usda@
+    def "nightstand" (
+        prepend references = @Game/Meshes/MeshesLiving/Nightstand.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-0.9999999999920206, -0.000003994741635372208, 0, 0), (0.000003994741635372208, -0.9999999999920206, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
     }
 }

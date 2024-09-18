@@ -1,5 +1,12 @@
-﻿newmtl M_Nightstand
-	map_Kd M_Nightstand_D.bmp
-	map_Ks M_Nightstand_S.bmp
-	bump M_Nightstand_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
+newmtl M_Nightstand
+Ns 492.748962
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../textures/M_Nightstand.png

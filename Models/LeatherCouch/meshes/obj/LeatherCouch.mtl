@@ -1,10 +1,23 @@
-﻿newmtl M_Leather_Black
-	map_Kd M_Leather_Black_D.bmp
-	map_Ks M_Leather_Black_S.bmp
-	bump M_Leather_Black_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_Metal_Chrome
-	map_Kd M_Metal_Chrome_D.bmp
-	map_Ks M_Metal_Chrome_S.bmp
-	bump M_Metal_Chrome_N.bmp
+newmtl M_LeatherBlackNormal
+Ns 359.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../textures/M_LeatherBlackNormal.png
 
+newmtl M_MetalChrome
+Ns 813.533264
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd ../../textures/M_MetalChrome.png
