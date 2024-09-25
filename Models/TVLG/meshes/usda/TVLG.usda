@@ -1,30 +1,30 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/TVLG/meshes/usda/TVLG.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/TVLG/meshes/usda/TVLG.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-12.34.01"
+            string exportTime = "2024.09.25-12.04.45"
         }
-        string version = "11EDEA2E0AE8B0EF00C44810FAB3B96DF9AF9C81"
+        string version = "764DD16EBC0B486219DE39541AA2756666ADF503"
     }
 )
 {
-    def Mesh "tv_lg" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/TVLG.usda@
+    def "tv_lg" (
+        prepend references = @Game/Meshes/MeshesLiving/TVLG.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section2" (
@@ -33,7 +33,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/tv_lg/Section2/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Metal_Brushed.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/tv_lg/Section2/UnrealMaterial/UnrealShader.outputs:out>
 

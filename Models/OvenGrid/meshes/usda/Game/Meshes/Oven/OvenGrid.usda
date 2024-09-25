@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "OvenGrid"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -14,9 +14,9 @@ def "OvenGrid" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Oven/OvenGrid.OvenGrid"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.56.46"
+            string exportTime = "2024.09.23-16.53.18"
         }
-        string version = "05BF9C9B8902F55CFFFC77319C5207BCA4FD6B6D"
+        string version = "D0E910A6BBF464C49F03CF7FD85DE6A106BFEAFB"
     }
     prepend payload = @OvenGrid_payload.usda@
 )

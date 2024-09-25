@@ -1,5 +1,0 @@
-﻿newmtl M_Metal_Dark
-	map_Kd M_Metal_Dark_D.bmp
-	map_Ks M_Metal_Dark_S.bmp
-	bump M_Metal_Dark_N.bmp
-

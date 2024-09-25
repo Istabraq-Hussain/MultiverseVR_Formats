@@ -1,5 +1,12 @@
-﻿newmtl M_OvenBase
-	map_Kd M_OvenBase_D.bmp
-	map_Ks M_OvenBase_S.bmp
-	bump M_OvenBase_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
+newmtl M_OvenBase
+Ns 639.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.174647 0.174647 0.174647
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3

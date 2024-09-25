@@ -1,30 +1,30 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/Sofa/meshes/usda/Sofa.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/Sofa/meshes/usda/sofa.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.30-16.11.28"
+            string exportTime = "2024.09.25-00.32.32"
         }
-        string version = "0F1E9D978765A0C542931513F5F04ACB5DAF4A1A"
+        string version = "9C1913F4CC91473BC4CA6A3A98D3A2A686D37115"
     }
 )
 {
-    def Mesh "sofa" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/Sofa.usda@
+    def "sofa" (
+        prepend references = @Game/Meshes/MeshesLiving/Sofa.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section0" (
@@ -33,7 +33,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/sofa/Section0/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Fabric_Sofa_Inst.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/sofa/Section0/UnrealMaterial/UnrealShader.outputs:out>
 

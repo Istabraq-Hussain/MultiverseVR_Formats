@@ -1,0 +1,90 @@
+#usda 1.0
+(
+    defaultPrim = "TVSamsung"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "TVSamsung" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/TVSamsung/meshes/usda/Game/Meshes/MeshesLiving/TVSamsung.usda@
+        string name = "TVSamsung"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/TVSamsung.TVSamsung"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.25-12.20.14"
+        }
+        string version = "FE86D1EDDDF0D6D330B19C84A5C4A47A0D37C368"
+    }
+    prepend payload = @TVSamsung_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </TVSamsung/Materials/M_Basic_Black_02>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black_02.M_Basic_Black_02"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </TVSamsung/Materials/M_Metal_Chrome>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </TVSamsung/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </TVSamsung/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section4" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </TVSamsung/Materials/WorldGridMaterial>
+        custom string unrealMaterial = "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Basic_Black_02" (
+            prepend references = @../../Materials_Laborraum/M_Basic_Black_02.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Chrome" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Chrome.usda@
+        )
+        {
+        }
+
+        def Material "M_Basic_Black" (
+            prepend references = @../../Materials_Laborraum/M_Basic_Black.usda@
+        )
+        {
+        }
+
+        def Material "WorldGridMaterial" (
+            prepend references = @../../../Engine/EngineMaterials/WorldGridMaterial.usda@
+        )
+        {
+        }
+    }
+}
+

@@ -1,10 +1,33 @@
-﻿newmtl M_Basic_Black
-	map_Kd M_Basic_Black_D.bmp
-	map_Ks M_Basic_Black_S.bmp
-	bump M_Basic_Black_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_Fabric_SofaBed
-	map_Kd M_Fabric_SofaBed_D.bmp
-	map_Ks M_Fabric_SofaBed_S.bmp
-	bump M_Fabric_SofaBed_N.bmp
+newmtl M_BasicBlack
+Ns 359.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
 
+newmtl M_BasicBlack.001
+Ns 359.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl M_FabricSofaBed
+Ns 23.390982
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../textures/M_FabricSofaBed.png
+map_Bump -bm 1.000000 ../../textures/M_FabricSofaBedNormal.png

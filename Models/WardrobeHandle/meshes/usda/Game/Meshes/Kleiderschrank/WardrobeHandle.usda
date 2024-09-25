@@ -1,0 +1,36 @@
+#usda 1.0
+(
+    defaultPrim = "WardrobeHandle"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "WardrobeHandle" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/WardrobeHandle/meshes/usda/Game/Meshes/Kleiderschrank/WardrobeHandle.usda@
+        string name = "WardrobeHandle"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Kleiderschrank/WardrobeHandle.WardrobeHandle"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.25-12.34.32"
+        }
+        string version = "E898EFA08A7C64A92C24FF33742A752CB708C483"
+    }
+    prepend payload = @WardrobeHandle_payload.usda@
+)
+{
+    rel material:binding = </WardrobeHandle/Materials/M_Metal_Dark>
+    custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Dark.M_Metal_Dark"
+
+    def Scope "Materials"
+    {
+        def Material "M_Metal_Dark" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Dark.usda@
+        )
+        {
+        }
+    }
+}
+

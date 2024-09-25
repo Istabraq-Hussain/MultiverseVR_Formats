@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "OvenDoor"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -13,9 +13,9 @@ def "OvenDoor" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Oven/OvenDoor.OvenDoor"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.50.55"
+            string exportTime = "2024.09.19-22.15.55"
         }
-        string version = "3A2E8607E53BC79EC5C181913DA450C755FB476B"
+        string version = "7AFCB1B14B51131D2B4A8B5C84F4B1A934A55F01"
     }
     prepend payload = @OvenDoor_payload.usda@
 )

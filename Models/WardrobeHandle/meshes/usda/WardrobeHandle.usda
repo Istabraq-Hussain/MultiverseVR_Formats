@@ -1,46 +1,45 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/WardrobeHandle/meshes/usda/WardrobeHandle.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/WardrobeHandle/meshes/usda/WardrobeHandle.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-10.47.46"
+            string exportTime = "2024.09.25-12.34.32"
         }
-        string version = "D3CD5D528A628DE4EFBC24762BF8F59EB540B272"
+        string version = "B255A403A11AF1DB5EBF216BF9882E880577D445"
     }
 )
 {
-    def "closet"
+    def "closet_handle_left" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        prepend references = @Game/Meshes/Kleiderschrank/WardrobeHandle.usda@
+    )
     {
-        def Mesh "wardrobe_handle_right" (
-            prepend apiSchemas = ["MaterialBindingAPI"]
-            prepend references = @Assets/Game/Meshes/Kleiderschrank/WardrobeHandle.usda@
+        rel material:binding = </Root/closet_handle_left/UnrealMaterial>
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (-0.9999999999999996, -1.224646799147353e-16, 0, 0), (1.224646799147353e-16, -0.9999999999999996, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        def Material "UnrealMaterial" (
+            prepend references = @Game/Materials_Laborraum/M_Metal_Dark.usda@
         )
         {
-            rel material:binding = </Root/closet/wardrobe_handle_right/UnrealMaterial>
-            token visibility = "inherited"
-            matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
-            uniform token[] xformOpOrder = ["xformOp:transform"]
+            token outputs:unreal:surface.connect = </Root/closet_handle_left/UnrealMaterial/UnrealShader.outputs:out>
 
-            def Material "UnrealMaterial"
+            def Shader "UnrealShader"
             {
-                token outputs:unreal:surface.connect = </Root/closet/wardrobe_handle_right/UnrealMaterial/UnrealShader.outputs:out>
-
-                def Shader "UnrealShader"
-                {
-                    uniform token info:implementationSource = "sourceAsset"
-                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_Dark.M_Metal_Dark@
-                    token outputs:out
-                }
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Metal_Dark.M_Metal_Dark@
+                token outputs:out
             }
         }
     }

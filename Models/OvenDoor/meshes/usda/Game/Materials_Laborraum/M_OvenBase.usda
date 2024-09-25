@@ -12,9 +12,9 @@ def Material "M_OvenBase" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_OvenBase.M_OvenBase"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.50.55"
+            string exportTime = "2024.09.19-22.15.55"
         }
-        string version = "948DDB2E848711DC1E879218AD7433F65595A93F"
+        string version = "61BBCE17A14F9215BAEDF37EB798C0BCE52CACC1"
     }
 )
 {

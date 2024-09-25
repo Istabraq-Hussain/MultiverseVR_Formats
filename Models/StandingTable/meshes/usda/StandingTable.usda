@@ -1,30 +1,30 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/StandingTable/meshes/usda/StandingTable.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/StandingTable/meshes/usda/StandingTable.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.31-12.10.38"
+            string exportTime = "2024.09.25-01.05.42"
         }
-        string version = "E02082A534EA9729EFC76D7857D9C7AE0EC619CF"
+        string version = "2EE312BFEA1AFDAC64492FCFC4D6009408EA6183"
     }
 )
 {
-    def Mesh "standing_table" (
-        prepend references = @Assets/Game/Meshes/MeshesLiving/StandingTable.usda@
+    def "standing_table" (
+        prepend references = @Game/Meshes/MeshesLiving/StandingTable.usda@
     )
     {
         token visibility = "inherited"
-        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        matrix4d xformOp:transform = ( (-0.9999999999920206, -0.000003994741635372208, 0, 0), (0.000003994741635372208, -0.9999999999920206, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
         uniform token[] xformOpOrder = ["xformOp:transform"]
 
         over "Section0" (
@@ -33,7 +33,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/standing_table/Section0/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Metal_White.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/standing_table/Section0/UnrealMaterial/UnrealShader.outputs:out>
 
@@ -52,7 +54,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/standing_table/Section2/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Metal_White.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/standing_table/Section2/UnrealMaterial/UnrealShader.outputs:out>
 
@@ -71,7 +75,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/standing_table/Section3/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Metal_Chrome.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/standing_table/Section3/UnrealMaterial/UnrealShader.outputs:out>
 
@@ -90,7 +96,9 @@ def Xform "Root" (
         {
             rel material:binding = </Root/standing_table/Section1/UnrealMaterial>
 
-            def Material "UnrealMaterial"
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Basic_Black.usda@
+            )
             {
                 token outputs:unreal:surface.connect = </Root/standing_table/Section1/UnrealMaterial/UnrealShader.outputs:out>
 

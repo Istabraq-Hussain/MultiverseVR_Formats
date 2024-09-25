@@ -1,0 +1,70 @@
+#usda 1.0
+(
+    defaultPrim = "SofaBedClosed"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "SofaBedClosed" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/SofaBedClosed/meshes/usda/Game/Meshes/MeshesLiving/SofaBedClosed.usda@
+        string name = "SofaBedClosed"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/MeshesLiving/SofaBedClosed.SofaBedClosed"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.09.25-00.55.23"
+        }
+        string version = "53B8438B11DA5145A8732494A84A7754350CFD6F"
+    }
+    prepend payload = @SofaBedClosed_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </SofaBedClosed/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </SofaBedClosed/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    over "Section2" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </SofaBedClosed/Materials/M_Fabric_SofaBed>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Fabric_SofaBed.M_Fabric_SofaBed"
+    }
+
+    over "Section3" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </SofaBedClosed/Materials/M_Basic_Black>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Basic_Black.M_Basic_Black"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Basic_Black" (
+            prepend references = @../../Materials_Laborraum/M_Basic_Black.usda@
+        )
+        {
+        }
+
+        def Material "M_Fabric_SofaBed" (
+            prepend references = @../../Materials_Laborraum/M_Fabric_SofaBed.usda@
+        )
+        {
+        }
+    }
+}
+

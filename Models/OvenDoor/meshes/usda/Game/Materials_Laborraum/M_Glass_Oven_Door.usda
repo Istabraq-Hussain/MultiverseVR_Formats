@@ -12,9 +12,9 @@ def Material "M_Glass_Oven_Door" (
             string assetType = "Material"
             string contentPath = "/Game/Materials_Laborraum/M_Glass_Oven_Door.M_Glass_Oven_Door"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-14.50.55"
+            string exportTime = "2024.09.19-22.15.55"
         }
-        string version = "FA9FC2A82D2F6618D77551D60D553FC1EF2E17EE"
+        string version = "156583C57058B39ED66747801F9054D0EF4AEEF4"
     }
 )
 {

@@ -1,20 +1,42 @@
-﻿newmtl M_OvenBase
-	map_Kd M_OvenBase_D.bmp
-	map_Ks M_OvenBase_S.bmp
-	bump M_OvenBase_N.bmp
+# Blender 4.1.1 MTL File: 'None'
+# www.blender.org
 
-newmtl M_Glass_Oven
-	map_Kd M_Glass_Oven_D.bmp
-	map_Ks M_Glass_Oven_S.bmp
-	bump M_Glass_Oven_N.bmp
+newmtl M_GlassOven
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.001214 0.003347
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.600000
+illum 9
 
-newmtl M_Glass_Oven_Door
-	map_Kd M_Glass_Oven_Door_D.bmp
-	map_Ks M_Glass_Oven_Door_S.bmp
-	bump M_Glass_Oven_Door_N.bmp
+newmtl M_GlassOvenDoor
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
 
-newmtl M_Rubber_Plastic
-	map_Kd M_Rubber_Plastic_D.bmp
-	map_Ks M_Rubber_Plastic_S.bmp
-	bump M_Rubber_Plastic_N.bmp
+newmtl M_OvenBase
+Ns 639.999939
+Ka 1.000000 1.000000 1.000000
+Kd 0.174647 0.174647 0.174647
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
 
+newmtl M_RubberPlastic
+Ns 251.964600
+Ka 1.000000 1.000000 1.000000
+Kd 0.054480 0.054480 0.054480
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

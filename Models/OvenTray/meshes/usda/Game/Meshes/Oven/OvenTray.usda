@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "OvenTray"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
@@ -14,9 +14,9 @@ def "OvenTray" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Oven/OvenTray.OvenTray"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.08.07-15.00.06"
+            string exportTime = "2024.09.25-00.06.30"
         }
-        string version = "8DE37A83BC87395C0ADD933B0B9915AFDD63A96B"
+        string version = "8D84E7A82544DEBA3EE6579AC38DFF36FB49F3BA"
     }
     prepend payload = @OvenTray_payload.usda@
 )
