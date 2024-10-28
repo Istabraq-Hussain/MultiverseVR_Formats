@@ -14,7 +14,7 @@ def "CoffeeTableDrawer" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/MeshesLiving/CoffeeTableDrawer.CoffeeTableDrawer"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.14-13.28.23"
+            string exportTime = "2024.10.24-13.39.49"
         }
         string version = "A3E0C634C2A7F7E6BF478751221820955752EFE9"
     }

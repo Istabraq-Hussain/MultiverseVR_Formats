@@ -13,9 +13,9 @@ def Xform "Root" (
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.14-13.28.23"
+            string exportTime = "2024.10.24-13.39.49"
         }
-        string version = "64F984ED60EAFCC2EEB85EC9C43FA6EF7091504D"
+        string version = "CCBB177EA0900051DCD5E879D1C25DA0CA54006A"
     }
 )
 {
