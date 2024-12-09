@@ -13,9 +13,9 @@ def "Kitchen01Door01" (
             string assetType = "StaticMesh"
             string contentPath = "/Game/Meshes/Kitchen/Kitchen01Door01.Kitchen01Door01"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.09.16-16.55.57"
+            string exportTime = "2024.12.03-01.44.03"
         }
-        string version = "885BFC350FB9AE890C7B6BFC503E8AD281448BA2"
+        string version = "CB6BA329AB3AA60872487A11EF85EA01AB1891FB"
     }
     prepend payload = @Kitchen01Door01_payload.usda@
 )
