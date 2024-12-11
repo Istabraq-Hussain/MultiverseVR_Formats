@@ -1,50 +1,49 @@
 #usda 1.0
 (
     defaultPrim = "Root"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 1
     upAxis = "Z"
 )
 
 def Xform "Root" (
     assetInfo = {
-        asset identifier = @../../../../../../Users/giang/Documents/MultiverseVR_Formats/Models/WardrobeDoorRight/meshes/usda/WardrobeDoorRight.usda@
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/WardrobeDoorRight/meshes/usda/WardrobeDoorRight.usda@
         string name = "00_EG_IstabraqsApartment"
         dictionary unreal = {
             string assetType = "World"
             string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
             string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
-            string exportTime = "2024.07.30-16.21.45"
+            string exportTime = "2024.12.11-20.02.01"
         }
-        string version = "E066BAEFC3831A296EE2BD02A1E22735DEA67D73"
+        string version = "E41D3E792ABEDF1D56C98C6C62752D6C1DFE8725"
     }
 )
 {
-    def "closet"
+    def "closet_door_right" (
+        prepend references = @Game/Meshes/Kleiderschrank/WardrobeDoorRight.usda@
+    )
     {
-        def Mesh "wardrobe_door_right" (
-            prepend references = @Assets/Game/Meshes/Kleiderschrank/WardrobeDoorRight.usda@
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
         )
         {
-            token visibility = "inherited"
-            matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
-            uniform token[] xformOpOrder = ["xformOp:transform"]
+            rel material:binding = </Root/closet_door_right/Section0/UnrealMaterial>
 
-            over "Section0" (
-                prepend apiSchemas = ["MaterialBindingAPI"]
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Wood_Furniture.usda@
             )
             {
-                rel material:binding = </Root/closet/wardrobe_door_right/Section0/UnrealMaterial>
+                token outputs:unreal:surface.connect = </Root/closet_door_right/Section0/UnrealMaterial/UnrealShader.outputs:out>
 
-                def Material "UnrealMaterial"
+                def Shader "UnrealShader"
                 {
-                    token outputs:unreal:surface.connect = </Root/closet/wardrobe_door_right/Section0/UnrealMaterial/UnrealShader.outputs:out>
-
-                    def Shader "UnrealShader"
-                    {
-                        uniform token info:implementationSource = "sourceAsset"
-                        uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Wood_Furniture.M_Wood_Furniture@
-                        token outputs:out
-                    }
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Wood_Furniture.M_Wood_Furniture@
+                    token outputs:out
                 }
             }
         }

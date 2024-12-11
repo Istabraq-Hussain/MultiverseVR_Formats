@@ -1,0 +1,54 @@
+#usda 1.0
+(
+    defaultPrim = "WardrobeDoorRight"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "WardrobeDoorRight" (
+    assetInfo = {
+        asset identifier = @C:/Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/WardrobeDoorRight/meshes/usda/Game/Meshes/Kleiderschrank/WardrobeDoorRight.usda@
+        string name = "WardrobeDoorRight"
+        dictionary unreal = {
+            string assetType = "StaticMesh"
+            string contentPath = "/Game/Meshes/Kleiderschrank/WardrobeDoorRight.WardrobeDoorRight"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.12.11-20.02.01"
+        }
+        string version = "5E9773451B966FED52500A2F61A5B6F68C1EFBF6"
+    }
+    prepend payload = @WardrobeDoorRight_payload.usda@
+)
+{
+    over "Section0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </WardrobeDoorRight/Materials/M_Wood_Furniture>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Wood_Furniture.M_Wood_Furniture"
+    }
+
+    over "Section1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </WardrobeDoorRight/Materials/M_Metal_Chrome>
+        custom string unrealMaterial = "/Game/Materials_Laborraum/M_Metal_Chrome.M_Metal_Chrome"
+    }
+
+    def Scope "Materials"
+    {
+        def Material "M_Wood_Furniture" (
+            prepend references = @../../Materials_Laborraum/M_Wood_Furniture.usda@
+        )
+        {
+        }
+
+        def Material "M_Metal_Chrome" (
+            prepend references = @../../Materials_Laborraum/M_Metal_Chrome.usda@
+        )
+        {
+        }
+    }
+}
+

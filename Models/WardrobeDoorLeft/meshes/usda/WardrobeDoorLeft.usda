@@ -1,0 +1,52 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Root" (
+    assetInfo = {
+        asset identifier = @../../../../../../Users/Ista/Desktop/Art/AI Institute Bremen/Objectstandardisation/MultiverseVR_Formats/MultiverseVR_Formats/Models/WardrobeDoorLeft/meshes/usda/WardrobeDoorLight.usda@
+        string name = "00_EG_IstabraqsApartment"
+        dictionary unreal = {
+            string assetType = "World"
+            string contentPath = "/Game/IstabraqsMaps/00_EG_IstabraqsApartment.00_EG_IstabraqsApartment"
+            string engineVersion = "5.3.2-29314046+++UE5+Release-5.3"
+            string exportTime = "2024.12.11-20.32.53"
+        }
+        string version = "AA000369BC4D2170C57FE3FC6470048BBDDD9C58"
+    }
+)
+{
+    def "closet_door_left" (
+        prepend references = @Game/Meshes/Kleiderschrank/ClosetDoorLeft.usda@
+    )
+    {
+        token visibility = "inherited"
+        matrix4d xformOp:transform = ( (-2.220446049250313e-16, 1.0000000000000002, 0, 0), (-1.0000000000000002, -2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (0, -0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "Section0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/closet_door_left/Section0/UnrealMaterial>
+
+            def Material "UnrealMaterial" (
+                prepend references = @Game/Materials_Laborraum/M_Wood_Furniture.usda@
+            )
+            {
+                token outputs:unreal:surface.connect = </Root/closet_door_left/Section0/UnrealMaterial/UnrealShader.outputs:out>
+
+                def Shader "UnrealShader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:unreal:sourceAsset = @/Game/Materials_Laborraum/M_Wood_Furniture.M_Wood_Furniture@
+                    token outputs:out
+                }
+            }
+        }
+    }
+}
+

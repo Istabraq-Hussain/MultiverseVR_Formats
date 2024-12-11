@@ -59,7 +59,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd ../../textures/M_MetalChrome.png
+map_Kd ../../textures/M_MetalBurnishedSteel.png
 map_Bump -bm 1.000000 ../../textures/M_MetalBurnishedSteelNormal.png
 
 newmtl M_MetalChrome
@@ -70,7 +70,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd ../usda/Game/Materials_Laborraum/Textures/Game_Materials_Laborraum_M_Metal_Chrome_BaseColor.png
+map_Kd ../../textures/M_MetalChrome.png
 
 newmtl M_OvenBase
 Ns 639.999939
